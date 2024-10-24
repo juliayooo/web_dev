@@ -1,0 +1,1478 @@
+    1  python -V
+    2  python -V
+    3  python -V
+    4  " python -V"
+    5  "python -V"
+    6  \n\n30\nI have a mac, when I do:\n\npython --version
+    7  python --version
+    8  python -V
+    9  python -V
+   10  /Applications/Python\ 3.10/Update\ Shell\ Profile.command ; exit;
+   11  python
+   12  pip
+   13  python -v
+   14  python -v
+   15  pip
+   16  clear
+   17  python
+   18  python -v
+   19  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+   20  export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+   21  brew install python
+   22  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/juliayoo/.zprofile\n
+   23  eval "$(/opt/homebrew/bin/brew shellenv)"\n
+   24  brew install python
+   25  clear
+   26  python -v
+   27  python 
+   28  python --version
+   29  brew install pyenv\n
+   30  echo "alias python=/usr/bin/python3" >> ~/.zshrc
+   31  clear
+   32  python
+   33  phython3
+   34  python3
+   35  clear
+   36  python3 --version
+   37  python3
+   38  ssh -X {CS login}@homework.cs.tufts.edu
+   39  ssh -X jyoo06@homework.cs.tufts.edu
+   40  ssh -X jyoo06@homework.cs.tufts.edu
+   41  python
+   42  cd python
+   43  cd CS10
+   44  cd Desktop
+   45  cd CS10
+   46  python 3
+   47  python
+   48  cd Desktop
+   49  ex1.py
+   50  ex1.py 
+   51  cd ex1.py
+   52  python3 ex1.py
+   53  python
+   54  python3 ex1.py
+   55  ]
+   56  print("hello")
+   57  python
+   58  cd desktop
+   59  cd python 
+   60  cd python
+   61  cd desktop 
+   62  cd Desktop
+   63  python ex1.py
+   64  python
+   65  ssh -X jyoo06@homework.cs.tufts.edu
+   66  ssh -X jyoo06@homework.cs.tufts.edu
+   67  ssh -X jyoo06@homework.cs.tufts.edu
+   68  g++ -o encrypt -Wall -Wextra _encrypt.cpp\n
+   69  ssh -X {CS login}@homework.cs.tufts.edu
+   70  ssh -X jyoo06@homework.cs.tufts.edu
+   71  ssh -X jyoo06@homework.cs.tufts.edu
+   72  4 + 5=
+   73  ssh -X jyoo06@homework.cs.tufts.edu
+   74  ssh -X jyoo06@homework.cs.tufts.edu
+   75  use comp11
+   76  ssh -X jyoo06@homework.cs.tufts.edu
+   77  ssh -X jyoo06@homework.cs.tufts.edu
+   78  ssh -X jyoo06@homework.cs.tufts.edu
+   79  ssh -X jyoo06@homework.cs.tufts.edu
+   80  ssh -X jyoo06@homework.cs.tufts.edu
+   81  clear
+   82  ssh -X jyoo06@homework.cs.tufts.edu
+   83  ssh -X jyoo06@homework.cs.tufts.edu
+   84  ssh -X jyoo06@homework.cs.tufts.edu
+   85  clear
+   86  ssh -X jyoo06@homework.cs.tufts.edu
+   87  ssh -X jyoo06@homework.cs.tufts.edu
+   88  ssh -X jyoo06@homework.cs.tufts.edu
+   89  ssh -X jyoo06@homework.cs.tufts.edu
+   90  ssh -X jyoo06@homework.cs.tufts.edu
+   91  ssh -X jyoo06@homework.cs.tufts.edu
+   92  ssh -X jyoo06@homework.cs.tufts.edu
+   93  ssh -X jyoo06@homework.cs.tufts.edu
+   94  ssh -X jyoo06@homework.cs.tufts.edu
+   95  lear
+   96  ssh -X jyoo06@homework.cs.tufts.edu
+   97  clear
+   98  ssh -X jyoo06@homework.cs.tufts.edu
+   99  ssh -X jyoo06@homework.cs.tufts.edu
+  100  ssh -X jyoo06@homework.cs.tufts.edu
+  101  ssh -X jyoo06@homework.cs.tufts.edu
+  102  ssh -X jyoo06@homework.cs.tufts.edu
+  103  ssh -X jyoo06@homework.cs.tufts.edu
+  104  ssh -X jyoo06@homework.cs.tufts.edu
+  105  ssh -X jyoo06@homework.cs.tufts.edu
+  106  ssh -X jyoo06@homework.cs.tufts.edu
+  107  ssh -X jyoo06@homework.cs.tufts.edu
+  108  ssh -X jyoo06@homework.cs.tufts.edu
+  109  ssh -X jyoo06@homework.cs.tufts.edu
+  110  ssh -X jyoo06@homework.cs.tufts.edu
+  111  ssh -X jyoo06@homework.cs.tufts.edu
+  112  ssh -X jyoo06@homework.cs.tufts.edu
+  113  ssh -X jyoo06@homework.cs.tufts.edu
+  114  ssh -X jyoo06@homework.cs.tufts.edu
+  115  ssh -X jyoo06@homework.cs.tufts.edu
+  116  ssh -X jyoo06@homework.cs.tufts.edu
+  117  ssh -X jyoo06@homework.cs.tufts.edu
+  118  ssh -X jyoo06@homework.cs.tufts.edu
+  119  ssh -X jyoo06@homework.cs.tufts.edu
+  120  clear
+  121  ssh -X jyoo06@homework.cs.tufts.edu
+  122  ssh -X jyoo06@homework.cs.tufts.edu
+  123  ssh -X jyoo06@homework.cs.tufts.edu
+  124  ssh -X jyoo06@homework.cs.tufts.edu
+  125  ssh -X jyoo06@homework.cs.tufts.edu
+  126  ssh -X jyoo06@homework.cs.tufts.edu
+  127  ssh -X jyoo06@homework.cs.tufts.edu
+  128  clear
+  129  clear
+  130  ssh -X jyoo06@homework.cs.tufts.edu
+  131  ssh -X jyoo06@homework.cs.tufts.edu
+  132  ssh -X jyoo06@homework.cs.tufts.edu
+  133  ssh -X jyoo06@homework.cs.tufts.edu
+  134  ssh -X jyoo06@homework.cs.tufts.edu
+  135  ssh -X jyoo06@homework.cs.tufts.edu
+  136  pwd
+  137  cd hw02
+  138  ssh -X jyoo06@homework.cs.tufts.edu
+  139  ssh -X jyoo06@homework.cs.tufts.edu
+  140  ssh -X jyoo06@homework.cs.tufts.edu
+  141  ssh -X jyoo06@homework.cs.tufts.edu
+  142  ssh -X jyoo06@homework.cs.tufts.edu
+  143  ssh -X jyoo06@homework.cs.tufts.edu
+  144  ssh -X jyoo06@homework.cs.tufts.edu
+  145  ssh -X jyoo06@homework.cs.tufts.edu
+  146  ssh -X jyoo06@homework.cs.tufts.edu
+  147  ssh -X jyoo06@homework.cs.tufts.edu
+  148  ssh -X jyoo06@homework.cs.tufts.edu
+  149  ssh -X jyoo06@homework.cs.tufts.edu
+  150  ssh -X jyoo06@homework.cs.tufts.edu
+  151  ssh -X jyoo06@homework.cs.tufts.edu
+  152  ssh -X jyoo06@homework.cs.tufts.edu
+  153  ssh -X jyoo06@homework.cs.tufts.edu
+  154  ssh -X jyoo06@homework.cs.tufts.edu
+  155  ssh -X jyoo06@homework.cs.tufts.edu
+  156  ssh -X jyoo06@homework.cs.tufts.edu
+  157  ssh -X jyoo06@homework.cs.tufts.edu
+  158  ssh -X jyoo06@homework.cs.tufts.edu
+  159  ssh -X jyoo06@homework.cs.tufts.edu
+  160  ssh -X jyoo06@homework.cs.tufts.edu
+  161  ssh -X jyoo06@homework.cs.tufts.edu
+  162  ssh -X jyoo06@homework.cs.tufts.edu
+  163  ssh -X jyoo06@homework.cs.tufts.edu
+  164  ssh -X jyoo06@homework.cs.tufts.edu
+  165  ssh -X jyoo06@homework.cs.tufts.edu
+  166  ssh -X jyoo06@homework.cs.tufts.edu
+  167  ssh -X jyoo06@homework.cs.tufts.edu
+  168  ssh -X jyoo06@homework.cs.tufts.edu
+  169  ssh -X jyoo06@homework.cs.tufts.edu
+  170  ssh -X jyoo06@homework.cs.tufts.edu
+  171  ssh -X jyoo06@homework.cs.tufts.edu
+  172  ssh -X jyoo06@homework.cs.tufts.edu
+  173  ssh -X jyoo06@homework.cs.tufts.edu
+  174  ssh -X jyoo06@homework.cs.tufts.edu
+  175  ssh -X jyoo06@homework.cs.tufts.edu
+  176  ssh -X jyoo06@homework.cs.tufts.edu
+  177  ssh -X jyoo06@homework.cs.tufts.edu
+  178  ssh -X jyoo06@homework.cs.tufts.edu
+  179  ssh -X jyoo06@homework.cs.tufts.edu
+  180  ssh -X jyoo06@homework.cs.tufts.edu
+  181  ssh -X jyoo06@homework.cs.tufts.edu
+  182  ssh -X jyoo06@homework.cs.tufts.edu
+  183  ssh -X jyoo06@homework.cs.tufts.edu
+  184  ssh -X jyoo06@homework.cs.tufts.edu
+  185  ssh -X jyoo06@homework.cs.tufts.edu
+  186  ssh -X jyoo06@homework.cs.tufts.edu
+  187  ssh -X jyoo06@homework.cs.tufts.edu
+  188  ssh -X jyoo06@homework.cs.tufts.edu
+  189  ssh -X jyoo06@homework.cs.tufts.edu
+  190  ssh -X jyoo06@homework.cs.tufts.edu
+  191  ssh -X jyoo06@homework.cs.tufts.edu
+  192  ssh -X jyoo06@homework.cs.tufts.edu
+  193  ssh -X jyoo06@homework.cs.tufts.edu
+  194  ssh -X jyoo06@homework.cs.tufts.edu
+  195  ssh -X jyoo06@homework.cs.tufts.edu
+  196  ssh -X jyoo06@homework.cs.tufts.edu
+  197  ssh -X jyoo06@homework.cs.tufts.edu
+  198  ssh -X jyoo06@homework.cs.tufts.edu
+  199  ssh -X jyoo06@homework.cs.tufts.edu
+  200  ssh -X jyoo06@homework.cs.tufts.edu
+  201  ssh -X jyoo06@homework.cs.tufts.edu
+  202  ssh -X jyoo06@homework.cs.tufts.edu
+  203  ssh -X jyoo06@homework.cs.tufts.edu
+  204  ssh -X jyoo06@homework.cs.tufts.edu
+  205  ssh -X jyoo06@homework.cs.tufts.edu
+  206  ssh -X jyoo06@homework.cs.tufts.edu
+  207  ssh -X jyoo06@homework.cs.tufts.edu
+  208  ssh -X jyoo06@homework.cs.tufts.edu
+  209  ssh -X jyoo06@homework.cs.tufts.edu
+  210  ssh -X jyoo06@homework.cs.tufts.edu
+  211  ssh -X jyoo06@homework.cs.tufts.edu
+  212  ssh -X jyoo06@homework.cs.tufts.edu
+  213  ssh -X jyoo06@homework.cs.tufts.edu
+  214  ssh -X jyoo06@homework.cs.tufts.edu
+  215  ssh -X jyoo06@homework.cs.tufts.edu
+  216  ssh -X jyoo06@homework.cs.tufts.edu
+  217  ssh -X jyoo06@homework.cs.tufts.edu
+  218  ssh -X jyoo06@homework.cs.tufts.edu
+  219  ssh -X jyoo06@homework.cs.tufts.edu
+  220  ssh -X jyoo06@homework.cs.tufts.edu
+  221  ssh -X jyoo06@homework.cs.tufts.edu
+  222  ssh -X jyoo06@homework.cs.tufts.edu
+  223  ssh -X jyoo06@homework.cs.tufts.edu
+  224  ssh -X jyoo06@homework.cs.tufts.edu
+  225  ssh -X jyoo06@homework.cs.tufts.edu
+  226  ssh -X jyoo06@homework.cs.tufts.edu
+  227  ssh -X jyoo06@homework.cs.tufts.edu
+  228  ssh -X jyoo06@homework.cs.tufts.edu
+  229  ssh -X jyoo06@homework.cs.tufts.edu
+  230  ssh -X jyoo06@homework.cs.tufts.edu
+  231  clear
+  232  ssh -X jyoo06@homework.cs.tufts.edu
+  233  ssh -X jyoo06@homework.cs.tufts.edu
+  234  ssh -X jyoo06@homework.cs.tufts.edu
+  235  ssh -X jyoo06@homework.cs.tufts.edu
+  236  ssh -X jyoo06@homework.cs.tufts.edu
+  237  ssh -X jyoo06@homework.cs.tufts.edu
+  238  ssh -X jyoo06@homework.cs.tufts.edu
+  239  ssh -X jyoo06@homework.cs.tufts.edu
+  240  ssh -X jyoo06@homework.cs.tufts.edu
+  241  ssh -X jyoo06@homework.cs.tufts.edu
+  242  ssh -X jyoo06@homework.cs.tufts.edu
+  243  ssh -X jyoo06@homework.cs.tufts.edu
+  244  ssh -X jyoo06@homework.cs.tufts.edu
+  245  ssh -X jyoo06@homework.cs.tufts.edu
+  246  ssh -X jyoo06@homework.cs.tufts.edu
+  247  ssh -X jyoo06@homework.cs.tufts.edu
+  248  ssh -X jyoo06@homework.cs.tufts.edu
+  249  ssh -X jyoo06@homework.cs.tufts.edu
+  250  ssh -X jyoo06@homework.cs.tufts.edu
+  251  ssh -X jyoo06@homework.cs.tufts.edu
+  252  ssh -X jyoo06@homework.cs.tufts.edu
+  253  ssh -X jyoo06@homework.cs.tufts.edu
+  254  ssh -X jyoo06@homework.cs.tufts.edu
+  255  ssh -X jyoo06@homework.cs.tufts.edu
+  256  ssh -X jyoo06@homework.cs.tufts.edu
+  257  ssh -X jyoo06@homework.cs.tufts.edu
+  258  ssh -X jyoo06@homework.cs.tufts.edu
+  259  ssh -X jyoo06@homework.cs.tufts.edu
+  260  ssh -X jyoo06@homework.cs.tufts.edu
+  261  ssh -X jyoo06@homework.cs.tufts.edu
+  262  ssh -X jyoo06@homework.cs.tufts.edu
+  263  ssh -X jyoo06@homework.cs.tufts.edu
+  264  ssh -X jyoo06@homework.cs.tufts.edu
+  265  ssh -X jyoo06@homework.cs.tufts.edu
+  266  ssh -X jyoo06@homework.cs.tufts.edu
+  267  ssh -X jyoo06@homework.cs.tufts.edu
+  268  ssh -X jyoo06@homework.cs.tufts.edu
+  269    d vdv v f v  v
+  270  ssh -X jyoo06@homework.cs.tufts.edu
+  271  ssh -X jyoo06@homework.cs.tufts.edu
+  272  ssh -X jyoo06@homework.cs.tufts.edu
+  273  ssh -X jyoo06@homework.cs.tufts.edu
+  274  ssh -X jyoo06@homework.cs.tufts.edu
+  275  ssh -X jyoo06@homework.cs.tufts.edu
+  276  clear
+  277  ssh -X jyoo06@homework.cs.tufts.edu
+  278  ssh -X jyoo06@homework.cs.tufts.edu
+  279  ssh -X jyoo06@homework.cs.tufts.edu
+  280  ssh -X jyoo06@homework.cs.tufts.edu
+  281  ssh -X jyoo06@homework.cs.tufts.edu
+  282  ssh -X jyoo06@homework.cs.tufts.edu
+  283  ssh -X jyoo06@homework.cs.tufts.edu
+  284  ssh -X jyoo06@homework.cs.tufts.edu
+  285  ssh -X jyoo06@homework.cs.tufts.edu
+  286  ssh -X jyoo06@homework.cs.tufts.edu
+  287  ssh -X jyoo06@homework.cs.tufts.edu
+  288  ssh -X jyoo06@homework.cs.tufts.edu
+  289  ssh -X jyoo06@homework.cs.tufts.edu
+  290  ssh -X jyoo06@homework.cs.tufts.edu
+  291  ssh -X jyoo06@homework.cs.tufts.edu
+  292  ssh -X jyoo06@homework.cs.tufts.edu
+  293  ssh -X jyoo06@homework.cs.tufts.edu
+  294  ssh -X jyoo06@homework.cs.tufts.edu
+  295  ssh -X jyoo06@homework.cs.tufts.edu
+  296  ssh -X jyoo06@homework.cs.tufts.edu
+  297  ssh -X jyoo06@homework.cs.tufts.edu
+  298  ssh -X jyoo06@homework.cs.tufts.edu
+  299  ssh -X jyoo06@homework.cs.tufts.edu
+  300  ssh -X jyoo06@homework.cs.tufts.edu
+  301  ssh -X jyoo06@homework.cs.tufts.edu
+  302  ssh -X jyoo06@homework.cs.tufts.edu
+  303  ssh -X jyoo06@homework.cs.tufts.edu
+  304  ssh -X jyoo06@homework.cs.tufts.edu
+  305  ssh -X jyoo06@homework.cs.tufts.edu
+  306  ssh -X jyoo06@homework.cs.tufts.edu
+  307  ssh -X jyoo06@homework.cs.tufts.edu
+  308  ssh -X jyoo06@homework.cs.tufts.edu
+  309  ssh -X jyoo06@homework.cs.tufts.edu
+  310  ssh -X jyoo06@homework.cs.tufts.edu
+  311  ssh -X jyoo06@homework.cs.tufts.edu
+  312  ssh -X jyoo06@homework.cs.tufts.edu
+  313  ssh -X jyoo06@homework.cs.tufts.edu
+  314  ssh -X jyoo06@homework.cs.tufts.edu
+  315  ssh -X jyoo06@homework.cs.tufts.edu
+  316  ssh -X jyoo06@homework.cs.tufts.edu
+  317  ssh -X jyoo06@homework.cs.tufts.edu
+  318  ssh -X jyoo06@homework.cs.tufts.edu
+  319  ssh -X jyoo06@homework.cs.tufts.edu
+  320  ssh -X jyoo06@homework.cs.tufts.edu
+  321  ssh -X jyoo06@homework.cs.tufts.edu
+  322  ssh -X jyoo06@homework.cs.tufts.edu
+  323  ssh -X jyoo06@homework.cs.tufts.edu
+  324  ssh -X jyoo06@homework.cs.tufts.edu
+  325  ssh -X jyoo06@homework.cs.tufts.edu
+  326  ssh -X jyoo06@homework.cs.tufts.edu
+  327  ssh -X jyoo06@homework.cs.tufts.edu
+  328  ssh -X jyoo06@homework.cs.tufts.edu
+  329  ssh -X jyoo06@homework.cs.tufts.edu
+  330  ssh -X jyoo06@homework.cs.tufts.edu
+  331  ssh -X jyoo06@homework.cs.tufts.edu
+  332  ssh -X jyoo06@homework.cs.tufts.edu
+  333  ssh -X jyoo06@homework.cs.tufts.edu
+  334  ssh -X jyoo06@homework.cs.tufts.edu
+  335  ssh -X jyoo06@homework.cs.tufts.edu
+  336  ssh -X jyoo06@homework.cs.tufts.edu
+  337  ssh -X jyoo06@homework.cs.tufts.edu
+  338  code
+  339  code
+  340  cat << EOF >> ~/.zprofile\n# Add Visual Studio Code (code)\nexport PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"\nEOF\n
+  341  code
+  342  code .
+  343  pwd
+  344  ls
+  345  cd CODE
+  346  ls
+  347  ls
+  348  pwd
+  349  ls
+  350  ls
+  351  g++ first.cpp
+  352  g++ first.cpp
+  353  g++ first.cpp
+  354  first.cpp
+  355  first
+  356  g++ first.cpp
+  357  ./first
+  358  ./first.cpp
+  359  ./a.out
+  360  g++ -o first first.cpp
+  361  ./first
+  362  python --version
+  363  pip -V
+  364  python3 --version
+  365  pip3 --version
+  366  pip3 install --upgrade pip
+  367  pip3 install tk
+  368  pip install tk
+  369  sudo apt-get install python3-tk
+  370  python -m tkinter
+  371  TK_SILENCE_DEPRECATION=1
+  372  python -m tkinter
+  373  c
+  374  q
+  375  quit
+  376  cleae
+  377  clear
+  378  $ tclsh
+  379  $ tclsh\n% info patchlevel\n    8.6.8
+  380  $ python -m tkinter 
+  381  from tkinter import *
+  382  code. 
+  383  code .
+  384  cd CODE
+  385  ls
+  386  cd new python.py
+  387  ssh jyoo06@homework.cs.tufts.edu\n
+  388  ssh jyoo06@homework.cs.tufts.edu\n
+  389  ssh jyoo06@homework.cs.tufts.edu\n
+  390  ssh jyoo06@homework.cs.tufts.edu\n
+  391  ssh jyoo06@homework.cs.tufts.edu\n
+  392  ssh jyoo06@homework.cs.tufts.edu\nMelodicBlue02!
+  393  ssh jyoo06@homework.cs.tufts.edu\nMelodicBlue02!
+  394  ssh jyoo06@homework.cs.tufts.edu\n
+  395  ssh jyoo06@homework.cs.tufts.edu\n
+  396  ssh jyoo06@homework.cs.tufts.edu\n
+  397  ssh jyoo06@homework.cs.tufts.edu\n
+  398  ssh jyoo06@homework.cs.tufts.edu
+  399  ssh jyoo06@homework.cs.tufts.edu\n
+  400  ssh jyoo06@homework.cs.tufts.edu\n
+  401  ssh jyoo06@homework.cs.tufts.edu\n
+  402  ssh jyoo06@homework.cs.tufts.edu
+  403  ssh jyoo06@homework.cs.tufts.edu
+  404  ssh jyoo06@homework.cs.tufts.edu
+  405  ssh jyoo06@homework.cs.tufts.edu
+  406  ssh jyoo06@homework.cs.tufts.edu
+  407  ssh jyoo06@homework.cs.tufts.edu
+  408  rigihrwighwrighgr
+  409  g
+  410  g
+  411  ssh jyoo06@homework.cs.tufts.edu
+  412  ssh jyoo06@homework.cs.tufts.edu
+  413  ssh jyoo06@homework.cs.tufts.edu
+  414  ssh jyoo06@homework.cs.tufts.edu
+  415  MelodicBlue02!
+  416  MelodicBlue02!
+  417  ssh jyoo06@homework.cs.tufts.edu
+  418  ssh jyoo06@homework.cs.tufts.edu
+  419  ssh jyoo06@homework.cs.tufts.edu
+  420  ssh jyoo06@homework.cs.tufts.edu
+  421  ssh jyoo06@homework.cs.tufts.edu
+  422  ssh jyoo06@homework.cs.tufts.edu
+  423  ssh jyoo06@homework.cs.tufts.edu
+  424  ssh jyoo06@homework.cs.tufts.edu
+  425  ssh jyoo06@homework.cs.tufts.edu
+  426  ssh jyoo06@homework.cs.tufts.edu
+  427  ssh jyoo06@homework.cs.tufts.edu
+  428  ssh jyoo06@homework.cs.tufts.edu
+  429  ssh jyoo06@homework.cs.tufts.edu
+  430  ssh jyoo06@homework.cs.tufts.edu
+  431  ssh jyoo06@homework.cs.tufts.edu
+  432  ssh jyoo06@homework.cs.tufts.edu
+  433  ssh jyoo06@homework.cs.tufts.edu
+  434  ssh jyoo06@homework.cs.tufts.edu
+  435  ssh jyoo06@homework.cs.tufts.edu
+  436  ssh jyoo06@homework.cs.tufts.edu
+  437  ssh jyoo06@homework.cs.tufts.edu
+  438  ssh jyoo06@homework.cs.tufts.edu
+  439  ssh jyoo06@homework.cs.tufts.edu
+  440  ssh jyoo06@homework.cs.tufts.edu
+  441  ssh jyoo06@homework.cs.tufts.edu
+  442  ssh jyoo06@homework.cs.tufts.edu
+  443  ssh jyoo06@homework.cs.tufts.edu
+  444  ssh jyoo06@homework.cs.tufts.edu
+  445  ssh jyoo06@homework.cs.tufts.edu
+  446  ssh jyoo06@homework.cs.tufts.edu
+  447  ssh jyoo06@homework.cs.tufts.edu
+  448  ssh jyoo06@homework.cs.tufts.edu
+  449  ssh jyoo06@homework.cs.tufts.edu
+  450  ssh jyoo06@homework.cs.tufts.edu
+  451  ssh jyoo06@homework.cs.tufts.edu
+  452  ssh jyoo06@homework.cs.tufts.edu
+  453  ssh jyoo06@homework.cs.tufts.edu
+  454  ssh jyoo06@homework.cs.tufts.edu
+  455  ssh jyoo06@homework.cs.tufts.edu
+  456  ssh jyoo06@homework.cs.tufts.edu
+  457  ssh jyoo06@homework.cs.tufts.edu
+  458  ssh jyoo06@homework.cs.tufts.edu
+  459  ssh jyoo06@homework.cs.tufts.edu
+  460  ssh jyoo06@homework.cs.tufts.edu
+  461  ssh jyoo06@homework.cs.tufts.edu
+  462  ssh jyoo06@homework.cs.tufts.edu
+  463  ssh jyoo06@homework.cs.tufts.edu
+  464  ssh jyoo06@homework.cs.tufts.edu
+  465  ssh jyoo06@homework.cs.tufts.edu
+  466  ssh jyoo06@homework.cs.tufts.edu
+  467  ssh jyoo06@homework.cs.tufts.edu
+  468  ssh jyoo06@homework.cs.tufts.edu
+  469  ssh jyoo06@homework.cs.tufts.edu
+  470  ssh jyoo06@homework.cs.tufts.edu
+  471  ssh jyoo06@homework.cs.tufts.edu
+  472  ssh jyoo06@homework.cs.tufts.edu
+  473  ssh jyoo06@homework.cs.tufts.edu
+  474  ssh jyoo06@homework.cs.tufts.edu
+  475  ssh jyoo06@homework.cs.tufts.edu
+  476  4 
+  477  4 
+  478  ssh jyoo06@homework.cs.tufts.edu
+  479  ssh jyoo06@homework.cs.tufts.edu
+  480  ssh jyoo06@homework.cs.tufts.edu
+  481  ssh jyoo06@homework.cs.tufts.edu
+  482  ssh jyoo06@homework.cs.tufts.edu
+  483  ssh jyoo06@homework.cs.tufts.edu
+  484  ssh jyoo06@homework.cs.tufts.edu
+  485  ssh jyoo06@homework.cs.tufts.edu
+  486  ssh jyoo06@homework.cs.tufts.edu
+  487  ssh jyoo06@homework.cs.tufts.edu
+  488  ssh jyoo06@homework.cs.tufts.edu
+  489  ssh jyoo06@homework.cs.tufts.edu
+  490  ssh jyoo06@homework.cs.tufts.edu
+  491  ssh jyoo06@homework.cs.tufts.edu
+  492  ssh jyoo06@homework.cs.tufts.edu
+  493  ssh jyoo06@homework.cs.tufts.edu
+  494  ssh jyoo06@homework.cs.tufts.edu
+  495  ssh jyoo06@homework.cs.tufts.edu
+  496  ssh jyoo06@homework.cs.tufts.edu
+  497  ssh jyoo06@homework.cs.tufts.edu
+  498  ssh jyoo06@homework.cs.tufts.edu
+  499  ssh jyoo06@homework.cs.tufts.edu
+  500  ssh jyoo06@homework.cs.tufts.edu
+  501  ssh jyoo06@homework.cs.tufts.edu
+  502  ssh jyoo06@homework.cs.tufts.edu
+  503  ssh jyoo06@homework.cs.tufts.edu
+  504  ssh jyoo06@homework.cs.tufts.edu
+  505  ssh jyoo06@homework.cs.tufts.edu
+  506  ssh jyoo06@homework.cs.tufts.edu
+  507  ssh jyoo06@homework.cs.tufts.edu
+  508  ssh jyoo06@homework.cs.tufts.edu
+  509  ssh jyoo06@homework.cs.tufts.edu
+  510  ssh jyoo06@homework.cs.tufts.edu
+  511  ssh jyoo06@homework.cs.tufts.edu
+  512  ssh jyoo06@homework.cs.tufts.edu
+  513  ssh jyoo06@homework.cs.tufts.edu
+  514  ssh jyoo06@homework.cs.tufts.edu
+  515  ssh jyoo06@homework.cs.tufts.edu
+  516  ssh jyoo06@homework.cs.tufts.edu
+  517  ssh jyoo06@homework.cs.tufts.edu
+  518  ssh jyoo06@homework.cs.tufts.edu
+  519  ssh jyoo06@homework.cs.tufts.edu
+  520  ssh jyoo06@homework.cs.tufts.edu
+  521  ssh jyoo06@homework.cs.tufts.edu
+  522  ssh jyoo06@homework.cs.tufts.edu
+  523  ssh jyoo06@homework.cs.tufts.edu
+  524  ssh jyoo06@homework.cs.tufts.edu
+  525  ssh jyoo06@homework.cs.tufts.edu
+  526  ssh jyoo06@homework.cs.tufts.edu
+  527  ssh jyoo06@homework.cs.tufts.edu
+  528  ssh jyoo06@homework.cs.tufts.edu
+  529  ssh jyoo06@homework.cs.tufts.edu
+  530  ssh jyoo06@homework.cs.tufts.edu
+  531  ssh jyoo06@homework.cs.tufts.edu
+  532  ssh jyoo06@homework.cs.tufts.edu
+  533  ssh jyoo06@homework.cs.tufts.edu
+  534  ssh jyoo06@homework.cs.tufts.edu
+  535  ssh jyoo06@homework.cs.tufts.edu
+  536  ssh jyoo06@homework.cs.tufts.edu
+  537  ssh jyoo06@homework.cs.tufts.edu
+  538  ssh jyoo06@homework.cs.tufts.edu
+  539  ssh jyoo06@homework.cs.tufts.edu
+  540  ssh jyoo06@homework.cs.tufts.edu
+  541  ssh jyoo06@homework.cs.tufts.edu
+  542  ssh jyoo06@homework.cs.tufts.edu
+  543  ssh jyoo06@homework.cs.tufts.edu
+  544  ssh jyoo06@homework.cs.tufts.edu
+  545  ssh jyoo06@homework.cs.tufts.edu
+  546  ssh jyoo06@homework.cs.tufts.edu
+  547  ssh jyoo06@homework.cs.tufts.edu
+  548  ssh jyoo06@homework.cs.tufts.edu
+  549  ssh jyoo06@homework.cs.tufts.edu
+  550  ssh jyoo06@homework.cs.tufts.edu
+  551  ssh jyoo06@homework.cs.tufts.edu
+  552  ssh jyoo06@homework.cs.tufts.edu
+  553  ssh jyoo06@homework.cs.tufts.edu
+  554  ssh jyoo06@homework.cs.tufts.edu
+  555  ssh jyoo06@homework.cs.tufts.edu
+  556  ssh jyoo06@homework.cs.tufts.edu
+  557  ssh jyoo06@homework.cs.tufts.edu
+  558  ssh jyoo06@homework.cs.tufts.edu
+  559  ssh jyoo06@homework.cs.tufts.edu
+  560  clear
+  561  ssh jyoo06@homework.cs.tufts.edu
+  562  ssh jyoo06@homework.cs.tufts.edu
+  563  ssh jyoo06@homework.cs.tufts.edu
+  564  ssh jyoo06@homework.cs.tufts.edu
+  565  ssh jyoo06@homework.cs.tufts.edu
+  566  ssh jyoo06@homework.cs.tufts.edu
+  567  ssh jyoo06@homework.cs.tufts.edu
+  568  ssh jyoo06@homework.cs.tufts.edu
+  569  ssh jyoo06@homework.cs.tufts.edu
+  570  ssh jyoo06@homework.cs.tufts.edu
+  571  ssh jyoo06@homework.cs.tufts.edu
+  572  ssh jyoo06@homework.cs.tufts.edu
+  573  ssh jyoo06@homework.cs.tufts.edu
+  574  ssh jyoo06@homework.cs.tufts.edu
+  575  ssh jyoo06@homework.cs.tufts.edu
+  576  ssh jyoo06@homework.cs.tufts.edu
+  577  ssh jyoo06@homework.cs.tufts.edu
+  578  ssh jyoo06@homework.cs.tufts.edu
+  579  ssh jyoo06@homework.cs.tufts.edu
+  580  ssh jyoo06@homework.cs.tufts.edu
+  581  ssh jyoo06@homework.cs.tufts.edu
+  582  ssh jyoo06@homework.cs.tufts.edu
+  583  ssh jyoo06@homework.cs.tufts.edu
+  584  ssh jyoo06@homework.cs.tufts.edu
+  585  ssh jyoo06@homework.cs.tufts.edu
+  586  clear
+  587  ssh jyoo06@homework.cs.tufts.edu
+  588  ssh jyoo06@homework.cs.tufts.edu
+  589  ssh jyoo06@homework.cs.tufts.edu
+  590  ssh jyoo06@homework.cs.tufts.edu
+  591  ssh jyoo06@homework.cs.tufts.edu
+  592  ssh jyoo06@homework.cs.tufts.edu
+  593  ssh jyoo06@homework.cs.tufts.edu
+  594  ssh jyoo06@homework.cs.tufts.edu
+  595  ssh jyoo06@homework.cs.tufts.edu
+  596  ssh jyoo06@homework.cs.tufts.edu
+  597  ssh jyoo06@homework.cs.tufts.edu
+  598  ssh jyoo06@homework.cs.tufts.edu
+  599  ssh jyoo06@homework.cs.tufts.edu
+  600  ssh jyoo06@homework.cs.tufts.edu
+  601  ssh jyoo06@homework.cs.tufts.edu
+  602  ssh jyoo06@homework.cs.tufts.edu
+  603  ssh jyoo06@homework.cs.tufts.edu
+  604  ssh jyoo06@homework.cs.tufts.edu
+  605  ssh jyoo06@homework.cs.tufts.edu
+  606  ssh jyoo06@homework.cs.tufts.edu
+  607  ssh jyoo06@homework.cs.tufts.edu
+  608  ssh jyoo06@homework.cs.tufts.edu
+  609  ssh jyoo06@homework.cs.tufts.edu
+  610  ssh jyoo06@homework.cs.tufts.edu
+  611  ssh jyoo06@homework.cs.tufts.edu
+  612  ssh jyoo06@homework.cs.tufts.edu
+  613  ssh jyoo06@homework.cs.tufts.edu
+  614  ssh jyoo06@homework.cs.tufts.edu
+  615  ssh jyoo06@homework.cs.tufts.edu
+  616  ssh jyoo06@homework.cs.tufts.edu
+  617  ssh jyoo06@homework.cs.tufts.edu
+  618  make
+  619  make
+  620  ssh jyoo06@homework.cs.tufts.edu
+  621  ssh jyoo06@homework.cs.tufts.edu
+  622  make
+  623  make
+  624  ssh jyoo06@homework.cs.tufts.edu
+  625  ssh jyoo06@homework.cs.tufts.edu
+  626  ssh jyoo06@homework.cs.tufts.edu
+  627  ssh jyoo06@homework.cs.tufts.edu
+  628  ssh jyoo06@homework.cs.tufts.edu
+  629  ssh jyoo06@homework.cs.tufts.edu
+  630  ssh jyoo06@homework.cs.tufts.edu
+  631  ssh jyoo06@homework.cs.tufts.edu
+  632  ssh jyoo06@homework.cs.tufts.edu
+  633  ssh jyoo06@homework.cs.tufts.edu
+  634  ssh jyoo06@homework.cs.tufts.edu
+  635  ssh jyoo06@homework.cs.tufts.edu
+  636  ssh jyoo06@homework.cs.tufts.edu
+  637  ssh jyoo06@homework.cs.tufts.edu
+  638  ssh jyoo06@homework.cs.tufts.edu
+  639  ssh jyoo06@homework.cs.tufts.edu
+  640  ssh jyoo06@homework.cs.tufts.edu
+  641  ssh jyoo06@homework.cs.tufts.edu
+  642  ssh jyoo06@homework.cs.tufts.edu
+  643  ssh jyoo06@homework.cs.tufts.edu
+  644  ssh jyoo06@homework.cs.tufts.edu
+  645  ssh jyoo06@homework.cs.tufts.edu
+  646  ssh jyoo06@homework.cs.tufts.edu
+  647  ssh jyoo06@homework.cs.tufts.edu
+  648  ssh jyoo06@homework.cs.tufts.edu
+  649  ssh jyoo06@homework.cs.tufts.edu
+  650  ssh jyoo06@homework.cs.tufts.edu
+  651  ssh jyoo06@homework.cs.tufts.edu
+  652  ssh jyoo06@homework.cs.tufts.edu
+  653  ssh jyoo06@homework.cs.tufts.edu
+  654  ssh jyoo06@homework.cs.tufts.edu
+  655  ssh jyoo06@homework.cs.tufts.edu
+  656  ssh jyoo06@homework.cs.tufts.edu
+  657  ssh jyoo06@homework.cs.tufts.edu
+  658  ssh jyoo06@homework.cs.tufts.edu
+  659  ssh jyoo06@homework.cs.tufts.edu
+  660  ssh jyoo06@homework.cs.tufts.edu
+  661  ssh jyoo06@homework.cs.tufts.edu
+  662  ssh jyoo06@homework.cs.tufts.edu
+  663  ssh jyoo06@homework.cs.tufts.edu
+  664  ssh jyoo06@homework.cs.tufts.edu
+  665  ssh jyoo06@homework.cs.tufts.edu
+  666  ssh jyoo06@homework.cs.tufts.edu
+  667  ssh jyoo06@homework.cs.tufts.edu
+  668  ssh jyoo06@homework.cs.tufts.edu
+  669  ssh jyoo06@homework.cs.tufts.edu
+  670  ssh jyoo06@homework.cs.tufts.edu
+  671  ssh jyoo06@homework.cs.tufts.edu
+  672  ssh jyoo06@homework.cs.tufts.edu
+  673  ssh jyoo06@homework.cs.tufts.edu
+  674  ssh jyoo06@homework.cs.tufts.edu
+  675  ssh jyoo06@homework.cs.tufts.edu
+  676  ssh jyoo06@homework.cs.tufts.edu
+  677  ssh jyoo06@homework.cs.tufts.edu
+  678  clear
+  679  ssh jyoo06@homework.cs.tufts.edu
+  680  ssh jyoo06@homework.cs.tufts.edu
+  681  ssh jyoo06@homework.cs.tufts.edu
+  682  ssh jyoo06@homework.cs.tufts.edu
+  683  ssh jyoo06@homework.cs.tufts.edu
+  684  ssh jyoo06@homework.cs.tufts.edu
+  685  MelodicBlue2
+  686  MelodicBlue2
+  687  ssh jyoo06@homework.cs.tufts.edu
+  688  ssh jyoo06@homework.cs.tufts.edu
+  689  ssh jyoo06@homework.cs.tufts.edu
+  690  ssh jyoo06@homework.cs.tufts.edu
+  691  ssh jyoo06@homework.cs.tufts.edu
+  692  ssh jyoo06@homework.cs.tufts.edu
+  693  ssh jyoo06@homework.cs.tufts.edu
+  694  ssh jyoo06@homework.cs.tufts.edu
+  695  ssh jyoo06@homework.cs.tufts.edu
+  696  ssh jyoo06@homework.cs.tufts.edu
+  697  ssh jyoo06@homework.cs.tufts.edu
+  698  ssh jyoo06@homework.cs.tufts.edu
+  699  ssh jyoo06@homework.cs.tufts.edu
+  700  ssh jyoo06@homework.cs.tufts.edu
+  701  ssh jyoo06@homework.cs.tufts.edu
+  702  ssh jyoo06@homework.cs.tufts.edu
+  703  ssh jyoo06@homework.cs.tufts.edu
+  704  ssh jyoo06@homework.cs.tufts.edu
+  705  ssh jyoo06@homework.cs.tufts.edu
+  706  ssh jyoo06@homework.cs.tufts.edu
+  707  ssh jyoo06@homework.cs.tufts.edu
+  708  ssh jyoo06@homework.cs.tufts.edu
+  709  ssh jyoo06@homework.cs.tufts.edu
+  710  ssh jyoo06@homework.cs.tufts.edu
+  711  ssh jyoo06@homework.cs.tufts.edu
+  712  ssh jyoo06@homework.cs.tufts.edu
+  713  ssh jyoo06@homework.cs.tufts.edu
+  714  ssh jyoo06@homework.cs.tufts.edu
+  715  ssh jyoo06@homework.cs.tufts.edu
+  716  ssh jyoo06@homework.cs.tufts.edu
+  717  ssh jyoo06@homework.cs.tufts.edu
+  718  ssh jyoo06@homework.cs.tufts.edu
+  719  ssh jyoo06@homework.cs.tufts.edu
+  720  ssh jyoo06@homework.cs.tufts.edu
+  721  ssh jyoo06@homework.cs.tufts.edule 
+  722  ssh jyoo06@homework.cs.tufts.edule 
+  723  ssh jyoo06@homework.cs.tufts.edu
+  724  ssh jyoo06@homework.cs.tufts.edu
+  725  MelodicBlue2
+  726  clear
+  727  ssh jyoo06@homework.cs.tufts.edu
+  728  ssh jyoo06@homework.cs.tufts.edu
+  729  ssh jyoo06@homework.cs.tufts.edu
+  730  ssh jyoo06@homework.cs.tufts.edu
+  731  ssh jyoo06@homework.cs.tufts.edu
+  732  ssh jyoo06@homework.cs.tufts.edu
+  733  ssh jyoo06@homework.cs.tufts.edu
+  734  ssh jyoo06@homework.cs.tufts.edu
+  735  ssh jyoo06@homework.cs.tufts.edu
+  736  ssh jyoo06@homework.cs.tufts.edu
+  737  ssh jyoo06@homework.cs.tufts.edu
+  738  ssh jyoo06@homework.cs.tufts.edu
+  739  ssh jyoo06@homework.cs.tufts.edu
+  740  ssh jyoo06@homework.cs.tufts.edu
+  741  ssh jyoo06@homework.cs.tufts.edu
+  742  brew install mongosh
+  743  mongosh "mongodb+srv://mycluster.hoddati.mongodb.net/" --apiVersion 1 --username julia
+  744  clear
+  745  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  746  brew install mongosh\n\n
+  747  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"\n
+  748  brew install mongosh\n\n
+  749  mongosh "mongodb+srv://cluster0.alezabz.mongodb.net/" --apiVersion 1 --username juliamfy --password NpXLgv8dZBSfk4XJ
+  750  xcode-select --install
+  751  xcode-select --install
+  752  brew install mongosh\n
+  753  mongosh
+  754  mongosh "mongodb+srv://mycluster.hoddati.mongodb.net/" --apiVersion 1 --username julia
+  755  node
+  756  NODE
+  757  node
+  758  ls
+  759  cd cs20
+  760  node
+  761  ls
+  762  .load node1.js
+  763  node
+  764  ls
+  765  ls
+  766  cd
+  767  cd
+  768  pwd
+  769  cd cs20
+  770  ls
+  771  .exit
+  772  cd CLassDemos
+  773  ls
+  774  cd ClassDemos
+  775  pwd
+  776  cd
+  777  ls
+  778  cd Desktop
+  779  ls
+  780  cd cs20
+  781  ls
+  782  cd ClassDemos
+  783  ls
+  784  node
+  785  ls
+  786  node
+  787  .load node1.js
+  788  node
+  789  mongosh
+  790  mongosh "mongodb+srv://products.rf6kzjm.mongodb.net/" --apiVersion 1 --username juliamfy --password 1234
+  791  mongosh "mongodb+srv://products.rf6kzjm.mongodb.net/" --apiVersion 1 --username juliamfy
+  792  node
+  793  /Users/juliayoo/Desktop/proj04\ 2/README ; exit;
+  794  npm install mongodb
+  795  node
+  796  pwd
+  797  cd Desktop
+  798  ls
+  799  cd cs20
+  800  node
+  801  npm install mongodb@4.0
+  802  node
+  803  node mynode.js
+  804  node mynode.js
+  805  node find.js
+  806  node mynode.js
+  807  node find.js
+  808  node find.js
+  809  Do this command in your terminal: git clone https://github.com/benmli/cs20-tuner.git\n\n
+  810  git clone https://github.com/benmli/cs20-tuner.git
+  811  cd final
+  812  git clone https://github.com/benmli/cs20-tuner.git
+  813  pwd
+  814  cd Destop
+  815  cd Desktop
+  816  ls
+  817  cd cs20
+  818  ls
+  819  node
+  820  pwd
+  821  ls
+  822  node part1.js
+  823  .exit
+  824  cd StockTicker
+  825  node part1.js
+  826  node part1.js
+  827  node part1.js
+  828  node part1.js
+  829  node part1.js
+  830  node part1.js
+  831  node part1.js
+  832  node part1.js
+  833  node part1.js
+  834  node part1.js
+  835  node part1.js
+  836  .exit
+  837  node part1.js
+  838  node part1.js
+  839  ls
+  840  node part1.js
+  841  mongosh "mongodb+srv://stock.oloh5ej.mongodb.net/" --apiVersion 1 --username juliamfy
+  842  node part1.js
+  843  node part1.js
+  844  npm install mongodb@4.0
+  845  node part1.js
+  846  node part1.js
+  847  node part1.js
+  848  node part1.js
+  849  node part1.js
+  850  node part1.js
+  851  node part1.js
+  852  node part1.js
+  853  cd StockTicker
+  854  ls
+  855  cd cs20
+  856  cd StockTicker
+  857  ls
+  858  cd
+  859  ls
+  860  cd cs20
+  861  ls
+  862  cd
+  863  cd StockTicker
+  864  ls
+  865  cd cs20
+  866  cd StockTicker
+  867  cd StockTicker
+  868  cd cs20
+  869  cd StockTicker
+  870  ls
+  871  cd
+  872  ls
+  873  owd
+  874  pwd
+  875  cd /User/juliayoo/Desktop
+  876  cd Desktop
+  877  ls
+  878  cd cs20
+  879  ls
+  880  cd StockTicker
+  881  node part2.js
+  882  node part2.js
+  883  node part2.js
+  884  node part2.js
+  885  node server.js
+  886  ls
+  887  node server.js
+  888  node server.js
+  889  node server.js
+  890  node server.js
+  891  node server.js
+  892  node server.js
+  893  node server.js
+  894  node server.js
+  895  node server.js
+  896  node server.js
+  897  node server.js
+  898  node server.js
+  899  node server.js
+  900  node server.js
+  901  node server.js
+  902  node server.js
+  903  node server.js
+  904  node server.js
+  905  node server.js
+  906  node server.js
+  907  node server.js
+  908  node server.js
+  909  node server.js
+  910  node server.js
+  911  node server.js
+  912  node server.js
+  913  node server.js
+  914  node server.js
+  915  clear
+  916  node part1.js
+  917  ls
+  918  cd Desktop
+  919  cd cs20
+  920  cd StockTicker\
+  921  cd StockTicker
+  922  node part2.js
+  923  clear
+  924  node part2.js
+  925  clear
+  926  node part2.js
+  927  clear
+  928  node part2.js
+  929  clear
+  930  node part2.js
+  931  clea
+  932  clear
+  933  node part2.js
+  934  which emax
+  935  which emacs
+  936  clea
+  937  brew install emacs
+  938  ls
+  939  which zsh
+  940  cd Desktop
+  941  ls
+  942  emacs test.txt
+  943  cd cs20
+  944  ks
+  945  ls
+  946  emacs TRYAGAIN.php
+  947  clear
+  948  powd
+  949  pwd
+  950  clear
+  951  desk
+  952  cd LIBRARY
+  953  pwd
+  954  clear
+  955  ls
+  956  deks
+  957  pu$$y
+  958  6PEN159
+  959  clear
+  960  ls
+  961  clear
+  962  brew list
+  963  clear
+  964  desk
+  965  emcd
+  966  cd
+  967  emacs .zprofile
+  968  asdfa
+  969  clear
+  970  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"\n\n
+  971  desk
+  972  cd cs20
+  973  ls
+  974  ls -l
+  975  emacs index.html
+  976  clear
+  977   ol\l\ll
+  978  ll
+  979  lll
+  980  l
+  981  l
+  982  l
+  983  l
+  984  l
+  985  l
+  986  l
+  987  clear
+  988  desk
+  989  touch new.txt
+  990  ls
+  991  mv new.txt neww.txt
+  992  which emacs
+  993  emacs neww.txt
+  994  man emacs
+  995  brew list 
+  996  cd
+  997  ls
+  998  pwd
+  999  cd /
+ 1000  ls
+ 1001  cd Users/juliayoo
+ 1002  ls
+ 1003  clear
+ 1004  ls
+ 1005  clear
+ 1006  cd
+ 1007  cd ~
+ 1008  desk
+ 1009  mv neww.txt ~
+ 1010  cd
+ 1011  ls -l mew
+ 1012  ls -l new*
+ 1013  mv neww.txt Desktop
+ 1014  ls
+ 1015  clear
+ 1016  desk
+ 1017  ls 
+ 1018  cat neww.txt~
+ 1019  cat neww.txt
+ 1020  ls
+ 1021  cd
+ 1022  ls
+ 1023  ls -la
+ 1024  cd .emacs.d
+ 1025  ls
+ 1026  touch init.el
+ 1027  ls
+ 1028  emacs init.el
+ 1029  clear
+ 1030  dcesk
+ 1031  desk
+ 1032  cd
+ 1033  source .emacs.d
+ 1034  clear
+ 1035  desk
+ 1036  touch text.sts
+ 1037  emcas test.txt
+ 1038  rm text.sts
+ 1039  emacs test.txt
+ 1040  ls
+ 1041  ls text*
+ 1042  rm *~
+ 1043  mkdir screenshots 
+ 1044  mv Scr*.png screenshots
+ 1045  lss
+ 1046  ls
+ 1047  cd cs20
+ 1048  ls
+ 1049  cat node1.js
+ 1050  clear
+ 1051  desk
+ 1052  cd cs20
+ 1053  more node2.js
+ 1054  more node1.js
+ 1055  less node1.js
+ 1056  emacs node1.js
+ 1057  ls
+ 1058  diff owls.php owls2.php
+ 1059  clear
+ 1060  cd
+ 1061  cd -
+ 1062  poopoo
+ 1063  PooPoo
+ 1064  desk
+ 1065  cd
+ 1066  ls
+ 1067  ls -a .*
+ 1068  ls -la
+ 1069  emacs .zprofile
+ 1070  poop
+ 1071  desk
+ 1072  poop
+ 1073  cat .zprofile 
+ 1074  cd
+ 1075  cat .zprofile 
+ 1076  poop
+ 1077  desk
+ 1078  source .zprofile
+ 1079  time
+ 1080  cleqr
+ 1081  clear
+ 1082  ls -l
+ 1083  clear
+ 1084  ls
+ 1085  mongos
+ 1086  mongosh
+ 1087  open https://www.google.com
+ 1088  open https://juliayoo.com
+ 1089  cd
+ 1090  emacs .zprofile
+ 1091  source .zprofile
+ 1092  julia
+ 1093  desk
+ 1094  cp *screenshots screenshots.backup
+ 1095  cp -r screenshots screenshots_backup
+ 1096  ls
+ 1097  cd screenshots_backup
+ 1098  ls
+ 1099  cd ..
+ 1100  ls
+ 1101  ls -a
+ 1102  cd screenshots_backup
+ 1103  cd ../..
+ 1104  pwd
+ 1105  ls
+ 1106  clear
+ 1107  s
+ 1108  ls
+ 1109  clear
+ 1110  ls
+ 1111  clear
+ 1112  ls
+ 1113  pwd
+ 1114  cd
+ 1115  ls
+ 1116  cd
+ 1117  emacs .zprofile
+ 1118  new
+ 1119  emacs .zprofile
+ 1120  source .zpropfile
+ 1121  source .zprofile
+ 1122  ls
+ 1123  clear
+ 1124  ls
+ 1125  profile
+ 1126  pussy
+ 1127  ls
+ 1128  profile
+ 1129  source .zprofile
+ 1130  new
+ 1131  clear
+ 1132  ls
+ 1133  pussy
+ 1134  pwd
+ 1135  clear
+ 1136  brew install git
+ 1137  which git
+ 1138  clear
+ 1139  ls
+ 1140  cler
+ 1141  clear
+ 1142  cd Applications
+ 1143  ls
+ 1144  cd /Applications
+ 1145  ls
+ 1146  cd
+ 1147  which conda
+ 1148  which python
+ 1149  which git
+ 1150  ls
+ 1151  cd .
+ 1152  cd /
+ 1153  find . | grep "git"
+ 1154  find . | grep "/git/"
+ 1155  clear
+ 1156  ls
+ 1157  cd var
+ 1158  ls
+ 1159  cd
+ 1160  which emacs
+ 1161  cd $(which emacs)
+ 1162  cd $(which emacs)/..
+ 1163  ls
+ 1164  ..
+ 1165  ls
+ 1166  pwd
+ 1167  cd ..
+ 1168  ..
+ 1169  ls
+ 1170  clear
+ 1171  ls
+ 1172  pwd
+ 1173  ..
+ 1174  ls
+ 1175  cd homebrew
+ 1176  ls
+ 1177  clear
+ 1178  ls
+ 1179  ..
+ 1180  ls
+ 1181  ..
+ 1182  ls
+ 1183  cd
+ 1184  ls
+ 1185  emacs .zshrc
+ 1186  julia
+ 1187  touch 
+ 1188  pwd
+ 1189  ls
+ 1190  Julia
+ 1191  julia
+ 1192  Desk
+ 1193  desk
+ 1194  ls
+ 1195  julia
+ 1196  cat text.txt
+ 1197  cat test.txt
+ 1198  nano test.txt
+ 1199  julia
+ 1200  desk
+ 1201  ls
+ 1202  cd CCI
+ 1203  ls
+ 1204  clear
+ 1205  pwd
+ 1206  ls
+ 1207  desk
+ 1208  clear
+ 1209  ls
+ 1210  cd CCI
+ 1211  clear
+ 1212  cd WEB
+ 1213  ls
+ 1214  pwd
+ 1215  git init
+ 1216  ls -a
+ 1217  git status
+ 1218  git add home.html
+ 1219  git status
+ 1220  git add about.html
+ 1221  git add what.html
+ 1222  git status
+ 1223  git commit -m "initial commit"
+ 1224  git status
+ 1225  git add style.css
+ 1226  git commit -m "initial commit"
+ 1227  git status 
+ 1228  git add .
+ 1229  git status 
+ 1230  git commit -m "img files, new line"
+ 1231  git config --global user.name "Julia Yoo"
+ 1232  git log
+ 1233  git status
+ 1234  clear
+ 1235  git log
+ 1236  git add about.html
+ 1237  git commit -m "abt changes"
+ 1238  git add about.html
+ 1239  git commit -m "bcg clr"
+ 1240  git log
+ 1241  ls
+ 1242  git log
+ 1243  git checkout 9d4b5b6242f5
+ 1244  git log
+ 1245  git checkout master
+ 1246  git log
+ 1247  git checkout 9d4b5b6242f5
+ 1248  git checkout master
+ 1249  git remote add origin git@github.com:juliayooo/web_cci_1.git
+ 1250  git branch -M main
+ 1251  git push -u origin main
+ 1252  clear
+ 1253  ssh-keygen
+ 1254  cat /Users/juliayoo/.ssh/git_key.pub\n
+ 1255  git remote add origin git@github.com:juliayooo/web_cci_1.git
+ 1256  git branch -M main
+ 1257  git push -u origin main
+ 1258  ssh -T git@github.com\n
+ 1259  ssh -vT git@github.com\n
+ 1260  clear
+ 1261  desk
+ 1262  cd cci
+ 1263  cd web
+ 1264  cd /Users/juliayoo/.ssh/git_key
+ 1265  cat /Users/juliayoo/.ssh/git_key.pub\n
+ 1266  ssh -vT git@github.com\n
+ 1267  ls ~/.ssh/
+ 1268  cat git_key.pub
+ 1269  cat /Users/juliayoo/.ssh/git_key.pub\n
+ 1270  git remote add origin git@github.com:juliayooo/web_cci_1.git\ngit branch -M main\ngit push -u origin main
+ 1271  ssh -T -p 443 git@ssh.github.com\n
+ 1272  clear
+ 1273  ls ~/.ssh/\n
+ 1274  ssh-keygen -t ed25519 -C "julia.mfy@gmail.com"\n
+ 1275  eval "$(ssh-agent -s)"\nssh-add ~/.ssh/id_ed25519
+ 1276  cat ~/.ssh/id_ed25519.pub\ncat ~/.ssh/id_ed25519.pub\n
+ 1277  ssh -T -p 443 git@ssh.github.com\n
+ 1278  git remote add origin git@github.com:juliayooo/web_cci_1.git\ngit branch -M main\ngit push -u origin main
+ 1279  git remote -v
+ 1280  git remote add origin git@github.com:juliayooo/web_cci_1.git\n
+ 1281  ssh -T -p 443 git@ssh.github.com\n
+ 1282  git push -u origin main
+ 1283  git remote -v\n
+ 1284  git push -u origin main
+ 1285  desk 
+ 1286  cd cci
+ 1287  cd web 
+ 1288  git remote -v
+ 1289  git remote -v\n
+ 1290  git remote add origin git@github.com:juliayooo/web_cci_1.git
+ 1291  git push -u origin main
+ 1292  n]
+ 1293  dewsk
+ 1294  desk
+ 1295  cd cci
+ 1296  cd web
+ 1297  git add .
+ 1298  git status
+ 1299  git push 
+ 1300  git add .
+ 1301  git push
+ 1302  git status
+ 1303  git log
+ 1304  git commit -m added heading 
+ 1305  git commit -m "added heading" 
+ 1306  git push
+ 1307  git add .
+ 1308  git commit -m "renamed index" 
+ 1309  git push
+ 1310  git add .
+ 1311  git commit -m "changed nav links" 
+ 1312  git push
+ 1313  git log
+ 1314  clear
+ 1315  cd
+ 1316  open .zshrc
+ 1317  desk
+ 1318  cd cci
+ 1319  cd web
+ 1320  cd wk1
+ 1321  cd
+ 1322  desk
+ 1323  cd wk2
+ 1324  c dcci
+ 1325  cd web/wk2
+ 1326  cd cci/web/wk2
+ 1327  git add .
+ 1328  cd ...
+ 1329  cd wk1
+ 1330  ls
+ 1331  cd web
+ 1332  cd wk1
+ 1333  git add .
+ 1334  git commit -m "changed id to class" 
+ 1335  git push
+ 1336  git add .
+ 1337  git commit -m "changed id to class" 
+ 1338  git push
+ 1339  git status
+ 1340  desk
+ 1341  cd cci/web
+ 1342  cd wk1
+ 1343  git add .
+ 1344  git commit 
+ 1345  git status
+ 1346  y
+ 1347  Y
+ 1348  omz update
+ 1349  desk
+ 1350  cd cci/web
+ 1351  omz changelog
+ 1352  nano ~/.zshrc
+ 1353  clear
+ 1354  nano ~/.zshrc
+ 1355  alias
+ 1356  cd -1
+ 1357  cd cci
+ 1358  cd
+ 1359  nano ~/.zshrc
+ 1360  web
+ 1361  nano ~/.zshrc
+ 1362  web
+ 1363  source ~/.zshrc\n
+ 1364  web
+ 1365  cd wk1
+ 1366  git log 
+ 1367  git status
+ 1368  cp index.html index2.html
+ 1369  ls
+ 1370  add .
+ 1371  git add .
+ 1372  git commit
+ 1373  web
+ 1374  git status
+ 1375  cd wk1
+ 1376  git status
+ 1377  git commit -m "new index copy"
+ 1378  git push
+ 1379  git status
+ 1380  git add .
+ 1381  git commit -m "updates"
+ 1382  git push
+ 1383  git add .
+ 1384  git commit -m "big changes, added gif"
+ 1385  git push
+ 1386  web
+ 1387  cd wk1
+ 1388  web
+ 1389  cd wk1
+ 1390  git add .
+ 1391  git commit -m "changed text to center"
+ 1392  git push
+ 1393  git add 
+ 1394  git add .
+ 1395  git commit -m "added word switching functionality"
+ 1396  git push
+ 1397  git add .
+ 1398  git commit -m "added full moving words, links, js func."
+ 1399  git push
+ 1400  git add .
+ 1401  git commit -m "changed text color"
+ 1402  git push
+ 1403  web
+ 1404  cd wk1
+ 1405  git add .
+ 1406  git commit -m "changed sentence"
+ 1407  git push
+ 1408  web
+ 1409  cd wk1
+ 1410  git add .
+ 1411  git commit "switched index file names"
+ 1412  git commit -m "switched index file names"
+ 1413  git push
+ 1414  julia
+ 1415  juli
+ 1416  julia
+ 1417  web
+ 1418  cd wk1
+ 1419  git add .
+ 1420  git commit -m "font change?"
+ 1421  git push
+ 1422  grep "var"
+ 1423  grep "var" index.html
+ 1424  cllear
+ 1425  clear
+ 1426  cd
+ 1427  web
+ 1428  cat WK1
+ 1429  cd wk1
+ 1430  cat index.html
+ 1431  cd .
+ 1432  cd ..
+ 1433  cowsay "hi"
+ 1434  cd
+ 1435  cowsay "hello"
+ 1436  clear
+ 1437  web 
+ 1438  cd wk1
+ 1439  cd ...
+ 1440  web
+ 1441  cd wk1
+ 1442  cd ....
+ 1443  cd web
+ 1444  web
+ 1445  cd wk1
+ 1446  desk
+ 1447  web
+ 1448  mkdir WK3
+ 1449  clear
+ 1450  touch new.html
+ 1451  ls
+ 1452  rm new.html
+ 1453  cd wk3
+ 1454  touch new.txt
+ 1455  ls
+ 1456  vim new.txt
+ 1457  nano new.txt
+ 1458  cat new.txt
+ 1459  nano new.txt
+ 1460  cta new.txt
+ 1461  cat new.txt
+ 1462  nano totoro.png
+ 1463  ls
+ 1464  nano new.txt
+ 1465  I am replacing a line in this file >> new.txt
+ 1466  "I am replacing a  line in this file" >> new.txt
+ 1467  echo "I am replacing a  line in this file" >> new.txt
+ 1468  cat new.txt
+ 1469  echo "I am replacing a  line in this file" > new.txt
+ 1470  cat new.txt
+ 1471  pwd >> new.txt
+ 1472  cat new.txt
+ 1473  touch new2.txt
+ 1474  echo "hello new2" > new2.txt
+ 1475  new2.txt >> new.txt
+ 1476  cat new2.txt >> new.txt
+ 1477  cat new.txt
+ 1478  cat history.txt

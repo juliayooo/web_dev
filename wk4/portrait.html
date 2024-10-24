@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="p5/empty-example/p5.min.js"></script>
+    <script src="p5/empty-example/addons/p5.sound.js"></script>
+    <script src="sketch.js"></script>
+    <title>portrait &#60;3 </title>
+    <style>
+
+        .fire_pic{
+            visibility: hidden;
+            position: fixed;
+            top: 250px;
+            left: 600px;
+            right:auto;
+            width: 25%;
+            filter: drop-shadow(5px 15px grey);
+            transition-duration: 3s; 
+        }
+        .fire_pic:hover{                                             
+            transform: skew(50deg) rotateY(180deg);
+
+        }   
+
+        .stars{
+
+            position: fixed;
+            top: 20%;
+            left: 25%;
+            font-size: 40px;
+            filter: drop-shadow(5px 15px grey);
+            transition-duration: 2s; 
+
+        }
+        .stars:hover{
+        transform: skew(50deg) rotateY(-180deg) rotateX(50deg);
+        
+
+        }   
+        body{
+            cursor: url("face.png"), auto;
+            background-image: url("sky.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        .dashes{
+            color: black;
+            position: fixed;
+            top: 60%;
+            left: 40%;
+            font-size: 40px;
+            transition-duration: 2s; 
+        }
+        .dashes:hover{
+            transform: skew(50deg) rotateY(-180deg) rotateX(50deg);
+            transition-timing-function: ease-in-out;
+        }
+        .pants_pic{
+            position: fixed;
+            top: 350px;
+            left: 350px;
+            right:auto;
+            width: 20%;
+            transition-duration: 2s; 
+        }
+        .pants_pic:hover{                                             
+            transform: rotateY(-180deg) scale(150%);
+            opacity: 50%;
+            /* transition-timing-function: ease-in-out; */
+
+
+        }
+        .face_pic{
+            position: fixed;
+            top: 350px;
+            left: 600px;
+            right:auto;
+            width: 5%; 
+            opacity: 75%;       
+        }
+        .swim_gif{
+            visibility: hidden;
+            position: relative;
+            right:auto;
+            width: 100%;        
+        }
+        .paint_pic{
+            position: fixed;
+            width: 15%;
+            right: 200px;
+            top: 100px;
+        }
+        .door_pic{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 300px;
+        }
+
+        .base_face{
+            position: absolute;
+            width: 250px;
+            height: 300px;
+            left: 40%;
+            top: 30%;
+            background-color: #c7804c;
+            border-radius: 300px;
+        }
+        .hair_pic{
+            position: absolute;
+            width: 650px;
+            top: 11%;
+            left: 38%;
+            opacity: 0;
+            /* transition-duration: 3s; */
+
+
+        }
+        /* .hair_pic:hover{
+            transform: rotateY(30deg);
+            transition-timing-function: ease-out;
+        }  */
+        .left_eye{
+            width: 70px;
+            height: 40px;
+            position: fixed;
+            background-color: white;
+            border-radius: 0 50%;
+            top: 43%;
+            left: 42%;
+            text-align: center;
+            font-weight: bold;
+            font-family:'Courier New';
+            padding-top: 10px;
+            font-size: 20pt;
+
+
+
+        }
+        .right_eye{
+            width: 70px;
+            height: 40px;
+            position: fixed;
+            background-color: white;
+            border-radius: 50% 0;
+            top: 43%;
+            left: 50%;
+            text-align: center;
+            font-weight: bold;
+            font-family:'Courier New';
+            padding-top: 10px;
+            font-size: 20pt;
+        }
+        .mouth_pic{
+            position: absolute;
+            width: 200px;
+            top: 45%;
+            left: 43%;
+
+        }
+        h3{
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            font-family: 'Times New Roman';
+            font-style: italic;
+            font-size: 40px;
+        }
+
+        </style>
+
+</head>
+<body>
+ <!-- swimming gif  -->
+    <img src="swimming.gif" class="swim_gif">
+
+<!-- fire image -->
+    <img src="fire.png" class="fire_pic" id="fire_pic">
+
+<!-- stars -->
+    <p class="stars">&#174; &emsp; &#9734; <br/> &emsp;&#9733; &#9734;
+        &#10027; <br> &emsp; &emsp;&emsp;	&#10039;
+    </p>
+
+<!-- dashes -->
+    <p class="dashes">
+        &#9734;</br>&emsp;&emsp;&#10039; &emsp;&emsp;&#9733;&emsp;&emsp;&emsp; &#9733; &emsp;&emsp;</br> -\
+    </p>
+
+<!-- pants image -->
+    <img src="pants.png" class="pants_pic">
+
+<!-- painting object -->
+    <img src="painting.png" class="paint_pic" id="paint">
+
+<!-- face object -->
+    <div class="face_container" id="face_container">
+        <img src="face.png" class="face_pic" id="face">
+      
+    </div>
+
+
+
+<!-- door object
+<img src="door.png" class="door_pic" id="door"> -->
+
+        <!-- container for css portrait -->
+
+            <div class="face_shapes" id="face_shapes" onmousemove="hair_grow()">
+
+                <div class="base_face">&emsp;</div>
+                <div class="left_eye">-</div>
+                <div class="right_eye">-</div>
+                <img src="hair.png" class="hair_pic" id ="hair_pic">
+                <img src="mouth.png" class="mouth_pic">
+                <h3>Rub my head</h3>
+            </div>
+
+
+<script language="javascript">
+
+
+// P5 SETUP
+
+// function setup() {
+//   createCanvas(300, 300);
+//   colorMode(HSB);
+
+//   // Set angle mode so that atan2() returns angles in degrees
+//   angleMode(DEGREES);
+
+//   describe('Two eyes that follow the cursor.');
+// }
+
+// function draw() {
+
+
+//   // Draw left eye
+
+//   let leftX = 150;
+//   let leftY = 200;
+
+//   // Calculate angle between left eye and mouse
+//   let leftAngle = atan2(mouseY - leftY, mouseX - leftX);
+
+//   push();
+//   translate(leftX, leftY);
+//   fill(255);
+//   ellipse(0, 0, 50, 50);
+//   rotate(leftAngle);
+//   fill(0);
+//   ellipse(12.5, 0, 25, 25);
+//   pop();
+
+//   // Draw right eye
+
+//   let rightX = 250;
+//   let rightY = 200;
+
+//   // Calculate angle between right eye and angle
+//   let rightAngle = atan2(mouseY - rightY, mouseX - rightX);
+
+//   push();
+//   translate(rightX, rightY);
+//   fill(255);
+//   ellipse(0, 0, 50, 50);
+//   rotate(rightAngle);
+//   fill(0);
+//   ellipse(12.5, 0, 25, 25);
+//   pop();
+// }
+
+
+// all elements to make changes to 
+    var face = document.getElementById("face");
+    var paint = document.getElementById("paint");
+    var door = document.getElementById("door");
+    var face_container = document.getElementById("face_container");
+    var face_shapes = document.getElementById("face_shapes");
+    var fire_pic = document.getElementById("fire_pic");
+
+// when the user clicks
+    document.addEventListener('click', function(i){
+
+        // // move face to click position
+        // face.style.left = i.clientX - 20 + "px";
+        // face.style.top = i.clientY - 20 + "px";
+
+        // add a new face 
+        var new_face = document.createElement("img");
+        new_face.src = "face.png";
+        new_face.id = "face" + i.clientX;
+        new_face.className = "face_pic";
+
+        // put it at mouse position 
+        new_face.style.left = i.clientX - 20 + "px";
+        new_face.style.top = i.clientY - 20 + "px";
+        // add to div 
+        face_container.appendChild(new_face);
+
+
+    //     // if user clicks on the door, make it dissapear to reveal painting
+    //     if((i.clientX > 0 && i.clientX < 300) && i.clientY < 633){
+    //         paint.style.visibility = "visible";
+    //         door.style.visibility = "hidden";
+
+    //     }
+    })
+
+    // face_shapes.addEventListener('click', function() {
+    //     face_shapes.style.transition =   "visibility 0s 2s, opacity 2s linear";
+    //     face_shapes.style.visibility = "hidden";
+
+    // });
+
+    let x = 0.00;
+    function hair_grow(){
+        var hair_pic = document.getElementById("hair_pic");
+        x += 0.002;
+        hair_pic.style.opacity = x;
+
+        if(x > 1){
+            // hair_pic.style.visibility = "hidden";
+            face_shapes.style.visibility = "hidden";
+            fire_pic.style.visibility = "visible";
+
+        }
+    }
+
+   
+</script>
+
+</body>
+
+
+
+</html>
+<!-- ADD FRAME BY FRAME WALKING ON BOTTOM OF PAGE -->

@@ -1,0 +1,6 @@
+const fireData = {
+    "name": "example",
+    "url": "fire.png",
+    "height": int,
+    "width": 200
+}

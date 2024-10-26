@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+        <title>hello</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+        </style>
+
+
+    </head>
+
+    <body>
+
+        <!-- screen container -->
+    <div class="body_div">
+        <!-- the gif bg -->
+        <img src="red_lady.gif" class="gif">
+        <!-- the first word -->
+        <div class="text" id="text">click me!</div>
+        <div class="link_div" id="link_div"><a class="word" id="word" href="">no, click meee</a></div>
+`  </div>
+
+
+<!-- all my hidden words -->
+<div hidden id="1">I</div>
+<div hidden id="2">really</div>
+<div hidden id="3">do</div>
+<div hidden id="4">not</div>
+<div hidden id="5">want</div>
+<div hidden id="6">to</div>
+<div hidden id="7">start</div>
+<div hidden id="8">over</div>
+
+
+        <script>
+    let wordCount = 0;
+    window.onload = function(){   
+        wordCount= 0;
+    }
+
+    // Click event to change words sequentially
+    document.getElementById('text').onclick = function(){
+        if(wordCount < 8) {
+            wordCount++;
+            document.getElementById('text').innerHTML = document.getElementById(wordCount).innerHTML;
+            // move the text randomly
+            var text_move = document.getElementById('text');
+            text_move.style.left = Math.floor(Math.random() * 80) + "%";
+            text_move.style.top = Math.floor(Math.random() * 80) + "%";
+
+            // move the href randomly as well
+            document.getElementById('word').innerHTML = document.getElementById(wordCount).innerHTML;
+            var link_div = document.getElementById('link_div');
+            link_div.style.left = Math.floor(Math.random() * 80) + "%";
+            link_div.style.top = Math.floor(Math.random() * 80) + "%";
+
+        } else {
+            wordCount = 0;
+        }
+        
+}
+
+        </script>
+ 
+    
+    </body>
+</html>

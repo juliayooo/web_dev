@@ -1,0 +1,67 @@
+/* Lusitana font */
+@font-face {
+    font-family: Lusitana;
+    src: url('https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&display=swap');
+}
+
+/* hyperlinks */
+.lusitana-regular {
+    font-family: "Lusitana", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+a{
+    font-family:'Lusitana';
+    text-align: center;
+    color: blue;
+    margin-top: 100px;
+    font-style: italic;
+    font-size: 30px;
+    padding: 50px;
+    align-items: center;
+}
+
+#heading_div{
+    padding: 500px;
+}
+
+h3{
+    text-align: center;
+}
+
+.profile_div{
+    text-align: center;
+}
+.nav_button{
+
+    padding: 50px;
+}
+    /* background red lady gif */
+    .gif{
+        width: 100%;
+    }
+    /* the first word "hi" */
+    .text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        right: 50%; 
+        font-family: Lusitana;
+        font-style: italic;
+        text-decoration: underline;
+        font-size: 30px;
+        color: darkblue;
+
+        
+    }
+    .link_div{
+
+        position: absolute;
+        top: 50%;
+        left: 70%;
+        right: 30%;                 
+    }
+    .body_div{
+        position: relative;
+       
+    }

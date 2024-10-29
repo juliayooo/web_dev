@@ -1,0 +1,47 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f1f1f1;
+}
+.dial{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: lightgray;
+    position: absolute;
+    display: flex;
+    /* margin-left: 50%; */
+    cursor: pointer;
+    text-align: center;
+}
+.dial-text{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: lightgray;
+    position: absolute;
+    display: flex;
+    /* margin-left: 50%; */
+    cursor: pointer;
+}
+.sun-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vw;
+    width: 100vw;
+}
+.sun{
+    width: 250px;
+    height: 500px;
+    border-radius: 500px 0 0 500px;
+    position: absolute;
+    display: flex;
+    background-color: palegoldenrod;
+    opacity: 75%;
+    /* center: 50%; */
+    right: 50vw;
+
+}

@@ -1,63 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        .container{
-            height: 100vh;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-
-        }
-        #one{
-            background-color: red;
-            width: 100%;
-            height: 100%;
-        }
-        #two{
-            background-color: blue;
-            width: 100%;
-            height: 100px;
-        }
-        #three{
-            background-color: green;
-            width: 100%;
-            height: 100px;
-        }
-        #four{
-            background-color: orange;
-            width: 100%;
-            height: 100px;
-            grid-column: 1/4;
-        }
-        .grid-container{
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            /* width: 100vh; */
-        }
-    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sundial</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="grid-container">
+    <div class="container">
+        <div class="dial">&nbsp; <br><br><br><br><br> &emsp;&emsp;&emsp;&emsp;a poem??</div>
+        
+        <div class="sun-container" id="sun-container">&nbsp;
+        <div class="sun" id="sun">&nbsp;</div>
+    </div>
 
-        <div id="one"> &nbsp;
-        </div>
-        <div id="two"> &nbsp;
-        </div>
-        <div id="three"> &nbsp;
-        </div>
-        <div id="four"> &nbsp;
-        </div>
 
-   
-</div>
-<div class="container">
-
-      
-</div>
+    </div>
     
+
 </body>
+<script>
+
+var date = new Date();
+let hour = 0;
+let minute = 0;
+hour = date.getHours();
+minute += date.getMinutes(); 
+
+document.write(hour, minute);
+degree = (hour * 30) + (minute * 0.5);
+
+    let sun = document.getElementById("sun-container");
+    sun.style.transform = "rotate(" + degree + "deg)";
+    document.write("rotated" + degree);
+
+</script>
+
 </html>

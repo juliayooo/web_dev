@@ -3,18 +3,18 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f1f1f1;
+    background-color: black;
 }
 .dial{
     width: 500px;
     height: 500px;
     border-radius: 50%;
-    background-color: lightgray;
     position: absolute;
     display: flex;
     /* margin-left: 50%; */
     cursor: pointer;
     text-align: center;
+    justify-content: center;
 }
 .dial-text{
     width: 500px;
@@ -40,8 +40,22 @@
     position: absolute;
     display: flex;
     background-color: palegoldenrod;
-    opacity: 75%;
+    opacity: 55%;
     /* center: 50%; */
     right: 50vw;
 
+}
+.poem{
+    position: absolute;
+    height: 495px;
+    display: flex;
+    top: 0%;
+    
+}
+body{
+    background-color: black;
+}
+.clock-nums{
+    width: 1200px;
+    position: fixed;
 }

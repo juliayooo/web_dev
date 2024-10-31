@@ -1,48 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Self-Portrait</title>
-<style>
-
-    @import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap');
-    @font-face {
-        font-family: 'Raleway Dots';
-        src: url('https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap');
-    }
-    .enter_button{
-    position: absolute;
-    display: inline-block;
-    align-items: center;
-    margin:auto;
-    left: 50%;
-    top: 50%;
-    border-radius: 50px;
-    font-size: 70px;
-    font-family: Raleway Dots;
-    font-style: bold;
-    padding: 30px;
-    border-color: white;
-    background-color: green;
-    opacity: 80%;
-
-    }
-
-</style>
-
+    <title>Sundial</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<!--  -->
-
 <body>
+    <div class="container">
+        <img src="clock-nums.png" class="clock-nums">
+        
+        <div class="sun-container" id="sun-container">&nbsp;
+        <div class="sun" id="sun">&nbsp;</div>
 
-<a href="portrait.html"><button class="enter_button">enter</button></a>
+    </div>
+        <div class="dial"><img src="sptext.png" class="poem"></div>
+
+
+    </div>
+    
 
 </body>
+<script>
 
+var date = new Date();
+let hour = 0;
+let minute = 0;
+hour = date.getHours();
+minute += date.getMinutes(); 
 
+document.write(hour, minute);
+degree = (hour * 30) + (minute * 0.5);
+
+    let sun = document.getElementById("sun-container");
+    sun.style.transform = "rotate(" + degree + "deg)";
+    document.write("rotated" + degree);
+
+</script>
 
 </html>

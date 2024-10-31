@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>typewriter</title>
+    <style>
+        .textcontainer{
+            font-size: 100px;
+            display:flex;
+            
+        }
+    </style>
+</head>
+<body>
+ <div class="textcontainer">
+
+
+ </div>   
+</body>
+
+<script>
+    let text = "Hi it's Julia. I wonder how long this will take to print.";
+    // 56 characters
+    var counter = 56;
+
+    var container = document.querySelector('.textcontainer');
+    container.textContent = text.slice(0, counter);
+    setInterval(function(){
+        container.style.fontWeight = "normal";
+
+        counter--;
+
+        container.textContent = text.slice(counter, -1);
+
+        if(counter === text.length){
+            counter = 0;
+        }
+        if((counter % 2) == 1){
+            setTimeout(function(){
+                // container.textContent = ;
+                container.style.fontWeight = "bold";
+                container.style.flex = "vertical";
+                container.innerHTML = " Help im trapped in the computer <img src=hand.webp width=300px>";
+
+            }, 1000);
+        }
+    }, 300);
+
+
+
+
+
+
+</script>
+</html>

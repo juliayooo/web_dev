@@ -22,20 +22,23 @@
 <script>
     let text = "Hi it's Julia. I wonder how long this will take to print.";
     // 56 characters
-    var counter = 56;
+    var counter = 0;
 
     var container = document.querySelector('.textcontainer');
     container.textContent = text.slice(0, counter);
     setInterval(function(){
         container.style.fontWeight = "normal";
 
-        counter--;
+        counter++;
 
-        container.textContent = text.slice(counter, -1);
+        container.textContent = text.slice(0, counter);
 
         if(counter === text.length){
             counter = 0;
         }
+        // else{
+        //     clearInterval()
+        // }
         if((counter % 2) == 1){
             setTimeout(function(){
                 // container.textContent = ;
@@ -43,9 +46,13 @@
                 container.style.flex = "vertical";
                 container.innerHTML = " Help im trapped in the computer <img src=hand.webp width=300px>";
 
-            }, 1000);
+            })
+            
         }
     }, 300);
+
+
+
 
 
 

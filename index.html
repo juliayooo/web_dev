@@ -10,6 +10,7 @@
 
 <body>
 
+
     <div class="body-container">
         <h3>Julia Yoo CCI</h3><br />
         <div class="container">
@@ -21,14 +22,40 @@
                 <a href="WK4">WK4 - "Sundial" Poetry Clock</a>
                 <a href="WK5">WK5</a>
                 <a href="WK6">WK6</a>
-
             </nav>
 
+            <div class="face-container" id="face-container"></div>
 
         </div>
 
     </div>
     
+    <script>
+    var face = document.getElementById("face");
+    var face_container = document.getElementById("face-container");
+
+// when the user clicks
+document.addEventListener('click', function(i){
+
+// // move face to click position
+// face.style.left = i.clientX - 20 + "px";
+// face.style.top = i.clientY - 20 + "px";
+
+// add a new face 
+var new_face = document.createElement("img");
+new_face.src = "face.png";
+new_face.id = "face_sticker" + i.clientX;
+new_face.className = "face_sticker";
+
+// put it at mouse position 
+new_face.style.left = i.clientX - 20 + "px";
+new_face.style.top = i.clientY - 20 + "px";
+face_container.appendChild(new_face);
+});
+
+
+    </script>
+
 </body>
 
 </html>

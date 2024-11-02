@@ -1,0 +1,58 @@
+body{
+    background-color: green;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    position:fixed;
+    opacity: 0.8;
+    cursor: url(face.png), auto;
+
+}
+.body-container{
+
+    background-color: bisque;
+    position: absolute;
+    width: 80vw;
+    height: 100vh;
+    border-radius: 30%;
+    display: flex;
+    justify-content: center;
+    margin-left: 10vw;
+
+  
+
+}
+h3{
+    font-family: sans-serif;
+    font-style: italic;
+    color: white;
+    position: fixed;
+    text-align: center;
+    top:10%;
+    font-size: 50px;
+
+}
+nav{
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    position: fixed;
+    display: flex;
+    bottom: 0%;
+    padding-bottom: 200px;
+
+}
+a{
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-style: italic;
+    justify-content: space-around;
+    margin: 20px;
+
+   
+}
+a:hover{
+    color: blue;
+}

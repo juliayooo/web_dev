@@ -1,5 +1,8 @@
 body{
     background-color: green;
+    background-image: url(https://bioweed.com.au/wp-content/uploads/Types-Of-Grass-And-How-To-Choose-One-For-Your-Lawn.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     align-items: center;
     justify-content: center;
     justify-items: center;
@@ -8,10 +11,16 @@ body{
     cursor: url("face.png"), auto;
 
 }
+.text{
+    bottom: 10px;
+    transform: translateX(-100%);
+    position: absolute;
+    font-size: 20px;
 
+}
 .body-container{
 
-    background-color: bisque;
+    background-color: rgb(245, 245, 220, 0.3);
     position: absolute;
     width: 80vw;
     height: 100vh;
@@ -41,6 +50,8 @@ h3{
     text-align: center;
     top:10%;
     font-size: 50px;
+    text-shadow: 1px 1px 2px black;
+
 
 }
 nav{
@@ -61,6 +72,8 @@ a{
     font-style: italic;
     justify-content: space-around;
     margin: 20px;
+    text-shadow: 1px 1px 2px black;
+
 
    
 }

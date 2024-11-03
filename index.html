@@ -13,18 +13,20 @@
 
     <div class="body-container">
         <h3>Julia Yoo CCI</h3><br />
+        <div class="face-container" id="face-container"></div>
         <div class="container">
             &nbsp;
+            
             <nav>
                 <a href="WK1">WK1 - Personal Site Raw HTML</a>
                 <a href="WK2">WK2 - Hyperlink Application</a>
                 <a href="WK3">WK3 - Self Portrait</a>
                 <a href="WK4">WK4 - "Sundial" Poetry Clock</a>
-                <a href="WK5">WK5</a>
-                <a href="WK6">WK6</a>
+                <a href="">WK5</a>
+                <a href="">WK6</a>
             </nav>
 
-            <div class="face-container" id="face-container"></div>
+           <h3 class="text" id="text"></h3>
 
         </div>
 
@@ -46,6 +48,8 @@ var new_face = document.createElement("img");
 new_face.src = "face.png";
 new_face.id = "face_sticker" + i.clientX;
 new_face.className = "face_sticker";
+new_face.style.position = "fixed";
+
 
 // put it at mouse position 
 new_face.style.left = i.clientX - 20 + "px";
@@ -53,6 +57,24 @@ new_face.style.top = i.clientY - 20 + "px";
 face_container.appendChild(new_face);
 });
 
+const text = document.querySelector("#text");
+const headingContent = "Lorem ipsum";
+const poem =
+  "click the screen to add a face !" ;
+
+let counter = 0;
+function type() {
+  if (counter < poem.length) {
+    text.textContent += poem[counter];
+    counter++;
+  }
+  if (counter === poem.length) {
+    counter = 0;
+    text.textContent = "";
+  }
+}
+// Start the title typewriter immediately
+setInterval(type, 100);
 
     </script>
 

@@ -56,13 +56,15 @@ new_face.style.left = i.clientX - 20 + "px";
 new_face.style.top = i.clientY - 20 + "px";
 face_container.appendChild(new_face);
 });
-
+// get necessary elements
 const text = document.querySelector("#text");
 const headingContent = "Lorem ipsum";
 const poem =
   "click the screen to add a face !" ;
 
 let counter = 0;
+
+// Typing function runs on interval 
 function type() {
   if (counter < poem.length) {
     text.textContent += poem[counter];
@@ -73,7 +75,7 @@ function type() {
     text.textContent = "";
   }
 }
-// Start the title typewriter immediately
+// Run the function on interval
 setInterval(type, 100);
 
     </script>

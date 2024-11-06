@@ -127,9 +127,9 @@ else {
         });
         Composite.add(engine.world, [face]);
     }
-
+    counter++;
 }
-counter ++;
+
 });
 
 // var boxA = Bodies.rectangle(400, 200, 80, 80);

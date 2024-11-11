@@ -13,8 +13,11 @@ document.body.appendChild( renderer.domElement );
 
 // Light so object is visible 
 const light = new THREE.DirectionalLight(0xffffff, 1);
+const light2 = new THREE.DirectionalLight(0xffffff, 1);
 light.position.set(20, 20, 20).normalize();
+light2.position.set(-20, 0, 20).normalize();
 scene.add(light);
+scene.add(light2);
 
 
 // Allowing user to use orbit control 
@@ -34,7 +37,7 @@ console.log("loaded");
 model = gltf.scene;
 
 // Scale 
-model.scale.set(15, 15, 15);  
+model.scale.set(20, 20, 20);  
 scene.add(model);
 console.log("added");
 

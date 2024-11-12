@@ -23,7 +23,7 @@ scene.add(light2);
 // Allowing user to use orbit control 
 const controls = new OrbitControls( camera, renderer.domElement );
 
-camera.position.set( 0, 0, 10 );
+camera.position.set( 0, 0, -50 );
 // send the update to cam position 
 controls.update();
 
@@ -31,13 +31,14 @@ controls.update();
 const loader = new GLTFLoader();
 let model;
 
-loader.load( 'face.glb', function ( gltf ) {
+loader.load( 'fullscane.glb', function ( gltf ) {
 console.log("loaded");
 	
 model = gltf.scene;
 
 // Scale 
-model.scale.set(20, 20, 20);  
+model.scale.set(50, 50, 50);  
+model.position.set(0, 70, 50);
 scene.add(model);
 console.log("added");
 
@@ -48,6 +49,18 @@ console.log("added");
 
 } );
 
+const slidersize = document.getElementById('size_slider');
+slidersize.addEventListener('input', function() {
+    let size = slidersize.value;
+    model.scale.set(size, size, size);
+    controls.update();
+});
+    // let size = slidersize.value;
+    // model.scale.set(size, size, size);
+    // camera.position.set( 0, 0, size );
+    // controls.update();
+
+
 function animate() {
 
 	requestAnimationFrame( animate );
@@ -57,8 +70,10 @@ function animate() {
     if (model) {
     
     // continuous rotation
-       model.rotation.y += 0.01;
+       model.rotation.y += 0.001;
     }
+
+
 
     controls.update();
 	renderer.render( scene, camera );

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Move tha image oooooh</title>
+    <style>
+        .pic{
+           position: absolute;
+           
+        }
+    </style>
+</head>
+<body>
+    <img src="face.png" id="pic" class="pic">
+
+</body>
+
+<script>
+
+const pic = document.querySelector("#pic");
+let keyx = 0;
+let keyy = 0;
+
+window.addEventListener("keydown", function(e){
+    if(e.key === 'ArrowRight'){
+        console.log(keyx);
+        keyx += 15;
+        pic.style.transform = "translateX(" + keyx + "px)";
+        // pic.style.transform = "translateY(" + keyy + "px)";
+
+
+    }
+    else if(e.key === 'ArrowLeft'){
+        console.log(keyx);
+        keyx -= 15;
+        pic.style.transform = "translateX(" + keyx + "px)";
+        // pic.style.transform = "translateY(" + keyy + "px)";
+
+
+    }
+    else if(e.key === 'ArrowUp'){
+        console.log(keyy);
+        keyy -= 15;
+        pic.style.transform = "translateX(" + keyx + "px)";
+        pic.style.transform = "translateY(" + keyy + "px)";
+    }
+    else if(e.key === 'ArrowDown'){
+        console.log(keyy);
+        keyy += 15;
+        pic.style.transform = "translateX(" + keyx + "px)";
+        pic.style.transform = "translateY(" + keyy + "px)";
+    }
+
+});
+
+</script> 
+</html>

@@ -25,7 +25,7 @@ scene.add(light2);
 // Allowing user to use orbit control 
 const controls = new OrbitControls( camera, renderer.domElement );
 
-camera.position.set( 0, 0, -50 );
+camera.position.set( 0, 0,-50 );
 // send the update to cam position 
 controls.update();
 
@@ -33,14 +33,14 @@ controls.update();
 const loader = new GLTFLoader();
 let model;
 
-loader.load( 'fullscane.glb', function ( gltf ) {
+loader.load( 'face.glb', function ( gltf ) {
 console.log("loaded");
 	
 model = gltf.scene;
 
 // Scale 
-model.scale.set(50, 50, 50);  
-model.position.set(0, 70, 50);
+model.scale.set(1, 1, 1);  
+model.position.set(0, 0, 0);
 scene.add(model);
 console.log("added");
 

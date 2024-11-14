@@ -1,0 +1,51 @@
+<html>
+<head>
+    <style>
+@media (min-width: 640px) {
+}
+@media (min-width: 768px) {
+    
+}
+    </style>
+</head>
+
+<body>
+    <button id="submit-btn">Click</button>
+    <p class="text">Hi <p>
+</body>
+
+<script>
+const myButton =
+document.querySelector("#submit-btn");
+myButton. textContent = "Click me";
+
+
+// conventional to use anon inline fucntions for event handlers 
+myButton.addEventListener("click", function() {
+    alert("Hello World");
+    this.style.backgroundColor = "red";
+    myArrowFunc();
+});
+
+// calling a variable lets you access all the info about the event listener. 
+//  'e' is convention to reference the event object
+myButton.addEventListener("click", function(e) {
+    console.log(e);
+});
+
+// for forms, using preventDefault() prevents the page from reloading on submit 
+
+
+// the arrow func, when calling "this" refers to the global object, or the window 
+//  object in the browser
+const myArrowFunc = () => {
+    alert(this);
+}
+
+myButton.addEventListener("click", () => {
+    console.log(this);
+});
+
+</script>
+
+</html>

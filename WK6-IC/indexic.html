@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paragraph exercise</title>
+    <style>
+        .para{
+            
+        }
+    </style>
+</head>
+
+<body>
+   
+    <input type="text" class ="input" id="input">
+    <p class="para" id="para"></p>
+    
+
+    <script>
+        const input = document.querySelector("#input");
+        const para = document.querySelector("#para");
+
+        if (input.value === "") {
+            para.textContent = "write something";
+        }
+        input.addEventListener("input", function(e) {;
+        para.textContent = e.target.value;
+
+
+        });
+       
+
+
+    </script>
+</body>
+
+</html>

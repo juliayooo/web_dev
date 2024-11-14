@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activate Deactivate</title>
+    <style>
+        body{
+            background-color: white;
+
+        }
+        .activate-btn{
+            background-color: green;
+            border: red 5px solid;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <button class="activate-btn" id="activate-btn">Activate</button>
+    <button class="deactivate-btn" id="deactivate-btn">Deactivate</button>
+    <label for="toggle-btn">Toggle Button</label>
+    <button id="toggle-btn">Toggle</button>
+
+  <script>
+    const activate =  document.querySelector("#activate-btn");
+    const deactivate = document.querySelector("#deactivate-btn");
+    const toggle = document.querySelector("#toggle-btn");
+
+    activate.addEventListener("click", function() {
+        console.log(document.body.classList);
+        document.body.style.backgroundColor = "red";
+    
+    });
+
+    deactivate.addEventListener("click", function() {
+        document.body.style.backgroundColor = "white";
+
+    });
+
+    toggle.addEventListener("click", function() {
+       document.body.classList.toggle("activate-btn");
+       toggle.classList.toggle("activate-btn");
+    });
+
+  </script>
+
+</body>
+</html>

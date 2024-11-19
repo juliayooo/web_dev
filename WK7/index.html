@@ -19,6 +19,8 @@
 
     <script>
         // set map to london default and defualt view 
+
+    
     const map = L.map('map').setView([51.505, -0.09], 13); 
 
         // allow mouse nav
@@ -27,8 +29,9 @@
             attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         }).addTo(map);
 
+        function addRoute(fileName){
             // Load the GPX file
-            new L.GPX("./route_2024-11-18_10.52am.gpx", {
+            new L.GPX(fileName, {
                 async: true,
                 marker_options: {
                     startIconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.5.0/pin-icon-start.png',
@@ -38,6 +41,33 @@
             }).on('loaded', function(e) {
                 map.fitBounds(e.target.getBounds());
             }).addTo(map);
+        }
+
+    async function getData() {
+    try {
+        const x = "https://opensheet.elk.sh/1MjDh6jzwM5pPvBil7whyeAC0v-Nrv8GvhLfdysEitMs/1";
+        let response = await fetch(x);
+        let data = await response.json();
+        console.log(data);
+        data.forEach((route) => {
+            let fileName = "./workout-routes/" + route.name;
+            addRoute(fileName);
+    });
+
+    } catch (error) {
+    console.error("Error:", error);
+    }
+   };
+
+getData();
+
+        
+
+        addRoute("./workout-routes/route_2024-11-18_10.52am.gpx");
+
+
+        
+
     
 
     </script>

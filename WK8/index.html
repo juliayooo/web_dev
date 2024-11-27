@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <script>
+         
+        document.addEventListener('DOMContentLoaded', function(){
+            console.log("loaded");
+        
+        const necklace = document.querySelector('.necklace');
+        const india1 = document.querySelector('.india1');
+        const india2 = document.querySelector('.india2');
+        const indiaquad = document.querySelector('.indiaquad');
+        const avo = document.querySelector('.avo');
+        const duo = document.querySelector('.duo');
+        const ppl = document.querySelector('.ppl');
+        let xval = 0;
+        let rotation = 0;
+        gsap.registerPlugin(ScrollTrigger);
+
+        let tl = gsap.timeline();
+        tl.to(necklace, { 
+            transformOrigin: "center center",
+            scale: 10, 
+            scrollTrigger: {
+                trigger: necklace,
+                start: "top 90%",
+                scrub: true,
+                markers: true,
+              },
+              
+        }).to(necklace, {
+            opacity: 0,
+            scrollTrigger: {
+                trigger: necklace,
+                start: "top 0%",
+                scrub: true,
+                markers: true,
+              },
+        }).to(ppl, {
+            opacity: 1,
+            scrollTrigger: {
+                trigger: ppl,
+                start: "top 70%",
+                scrub: true,
+                markers: true,
+              },
+
+        })
+        console.log( "triggered");
+        ;
+    }); 
+    </script>
+    <title>Jewellery with GSAP</title>
+</head>
+<body>
+    <div class="container">
+
+       
+    <img src="necklace.png" class="necklace">
+    <h1 class="ppl">people always ask about my jewellery</h1>
+    <img src="indiaquad.jpg" class="indiaquad">
+    <img src="india1.jpg" class="india1">
+    <img src="india2.jpg" class="india2">
+    <img src="avo.png" class="indiaquad">
+    <img src="duo.png" class="duo">
+
+
+    </div>
+</body>
+</html>

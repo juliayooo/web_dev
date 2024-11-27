@@ -1,0 +1,36 @@
+.necklace{
+
+    position: relative;
+    margin: 0 auto;
+    visibility: visible;
+    top: 100vh;
+    display: flex;
+    /* transform: scale(0.2); */
+    width: 10vw;
+
+}
+
+.container{
+    top: 0;
+    width: 100vw;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Ensures items stack vertically */
+
+}
+img{
+    /* width: 250px; */
+    display: none;
+}
+body{
+    height: 1000vh;
+}
+.ppl{
+    position: relative;
+    top: 175vh;
+    opacity: 0;
+    font-family: sans-serif;
+    color: #00A86B;
+}

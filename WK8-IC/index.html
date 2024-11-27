@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            margin-top: 50px;
+            background-color: green;
+            position: flex;
+            left: 0;
+            transform: translateX(0px);
+        }
+    </style>
+</head>
+<body>
+
+    <button class="butt">Press me plsss</button>
+    <button class="go">GO</button>
+    <button class="pause">PAUSE</button>
+    <button class="restart">RESTART</button>
+
+    <div class="box"></div>
+    <script>
+        const box = document.querySelector('.box');
+        const butt = document.querySelector('.butt');
+        const go = document.querySelector('.go');
+        const pause = document.querySelector('.pause');
+        const restart = document.querySelector('.restart');
+        let xval = 0;
+        let rotation = 0;
+        let tl = gsap.timeline();
+        tl.to(box, {
+            duration: 1,
+            ease: 'bounce',
+            x: "+=50",
+            rotation: "+=90",
+            // could also pass x: "+=50" as a string, gsap will read the expression
+        }).to(box, {
+            duration: 1,
+            ease: 'bounce',
+            y: "+=50",
+            rotation: "+=90",
+        }).to(box, {
+            duration: 5,
+            ease: 'ease',
+            rotation: 720,
+        });
+        
+        // there is also a .reverse() methods
+
+        go.addEventListener('click', () => {
+            tl.play();
+        });
+        pause.addEventListener('click', () => {
+            tl.pause();
+        });
+        restart.addEventListener('click', () => {
+            tl.restart();
+        });
+
+
+
+    </script>
+</body>
+</html>

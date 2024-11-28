@@ -27,10 +27,72 @@ img{
 body{
     height: 1000vh;
 }
-.ppl{
+.one{
     position: relative;
     top: 175vh;
     opacity: 0;
+    font-family: sans-serif;
+    color: #00A86B;
+}
+.indiaquad{
+    top: 200vh;
+    display: flex;
+    width: 400px;
+    position: relative;
+}
+.two{
+    position: relative;
+    top: 310vh;
+    opacity: 0;
+    font-family: sans-serif;
+    color: #00A86B;
+}
+
+.avo{
+    display: flex;
+    top: 400vh;
+    left: 0; 
+    width: 400px;
+}
+
+.duo{
+    display: flex;
+    top: 600vh;
+    width: 400px;
+}
+.marker{
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    left: 0;
+    top: 500vh;
+    display: none;
+    position: absolute;
+}
+.india1{
+    display: flex;
+    top: 450vh;
+    width: 100px;
+    right:100vw;
+    position: absolute;
+}
+.three{
+    position: absolute;
+    top: 550vh;
+    opacity: 0;
+    font-family: sans-serif;
+    color: #00A86B;
+}
+.tattoo{
+    top: 600vh;
+    position: absolute;
+    display: flex;
+    width: 2px;
+}
+.four{
+    top: 650vh;
+    opacity: 0;
+    position: absolute;
     font-family: sans-serif;
     color: #00A86B;
 }

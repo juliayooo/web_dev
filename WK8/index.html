@@ -17,7 +17,11 @@
         const indiaquad = document.querySelector('.indiaquad');
         const avo = document.querySelector('.avo');
         const duo = document.querySelector('.duo');
-        const ppl = document.querySelector('.ppl');
+        const one = document.querySelector('.one');
+        const two = document.querySelector('.two');
+        const three = document.querySelector('.three');
+        const tattoo = document.querySelector('.tattoo');
+        const four = document.querySelector('.four');
         let xval = 0;
         let rotation = 0;
         gsap.registerPlugin(ScrollTrigger);
@@ -25,7 +29,7 @@
         let tl = gsap.timeline();
         tl.to(necklace, { 
             transformOrigin: "center center",
-            scale: 10, 
+            scale: 8, 
             scrollTrigger: {
                 trigger: necklace,
                 start: "top 90%",
@@ -41,18 +45,80 @@
                 scrub: true,
                 markers: true,
               },
-        }).to(ppl, {
+        }).to(one, {
             opacity: 1,
             scrollTrigger: {
-                trigger: ppl,
+                trigger: one,
                 start: "top 70%",
+                scrub: true,
+                // markers: true,
+              },
+
+        }).to(indiaquad, {
+            transformOrigin: "center center",
+            scale: 2.5,
+            scrollTrigger: {
+                trigger: indiaquad,
+                start: "top 80%",
+                scrub: true,
+
+              },
+        }).to(two, {
+            opacity: 1,
+            scrollTrigger: {
+                trigger: two,
+                start: "top 70%",
+                scrub: true,
+                // markers: true,
+              },
+        }).to(avo, {
+            y: 2000,
+            scale: 1.5,
+            scrollTrigger: {
+                trigger: avo,
+                start: "top 90%",
                 scrub: true,
                 markers: true,
               },
-
-        })
+        }).to(india1, {
+            scale: 10,
+            x: 2200,
+            y: 500,
+            // ease: circ.in,
+            transformOrigin: "center center",
+            scrollTrigger: {
+            trigger: india1,
+            start: "top 50%",
+            scrub: true,
+            markers: true,
+              },
+        }).to(three, {
+            opacity: 1,
+            scrollTrigger: {
+                trigger: three,
+                start: "top 90%",
+                scrub: true,
+                // markers: true,
+              }
+        }).to(tattoo, {
+            scale: 300,
+            scrollTrigger: {
+                trigger: tattoo,
+                start: "top 90%",
+                scrub: true,
+                markers: true,
+              }
+            }).to(four, {
+            opacity: 1,
+            scrollTrigger: {
+                trigger: four,
+                start: "top 90%",
+                scrub: true,
+                markers: true,
+              }
+        });
         console.log( "triggered");
-        ;
+        
     }); 
     </script>
     <title>Jewellery with GSAP</title>
@@ -62,12 +128,18 @@
 
        
     <img src="necklace.png" class="necklace">
-    <h1 class="ppl">people always ask about my jewellery</h1>
+    <h1 class="one">people always ask about my jewellery</h1>
     <img src="indiaquad.jpg" class="indiaquad">
-    <img src="india1.jpg" class="india1">
-    <img src="india2.jpg" class="india2">
-    <img src="avo.png" class="indiaquad">
+    <h1 class="two">all my jewellery comes from my family, my mother and grandmother (avo)</h1>
+    <img src="avo.png" class="avo">
     <img src="duo.png" class="duo">
+    <div class="marker"> &emsp;</div>
+    <img src="india1.jpg" class="india1">
+    <h1 class="three">but i kept losing jewellery, and couldn't handle the 
+        feeling </br> or the anxiety of losing things that felt so precious </h1>
+    <img src="tattoo.jpeg" class="tattoo">
+    <h1 class="four">so i got them tattooed where they always sit </br> </br> byeee</h1>
+
 
 
     </div>

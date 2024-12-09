@@ -80,17 +80,18 @@ body {
     grid-row: 5 / 6;
 }
 /* images  */
-.mouth{
+.hair{
     /* position: fixed;
-    display: flex;
-    object-fit: cover;
-    width: 100%;*/
-    width: 10vw;
+    display: flex; */
+    width: 300px;
+    transform: translateY(100px) ;
+
 }
 .eye_left{
     /* position: fixed;
     display: flex; */
     width: 10vw;
+    transform: translateX(120px);
 
 
 }
@@ -98,6 +99,7 @@ body {
     /* position: fixed;
     display: flex; */
     width: 10vw;
+    transform: translateX(-150px);
 
 
 }
@@ -106,21 +108,26 @@ body {
     display: flex; */
     width: 10vw;
 }
-.hair{
+.mouth{
     /* position: fixed;
-    display: flex; */
-    width: 300px;
-
+    display: flex;
+    object-fit: cover;
+    width: 100%;*/
+    width: 10vw;
+    transform: translateY(-150px);
 }
+
 .LC{
     width: 10vw;
-
+    transform: translateX(120px) translateY(-150px);
 }
 .RC{
     width: 10vw;
+    transform: translateX(-150px) translateY(-150px);
 }
 .chin{
     width: 10vw;
+    transform: translateY(-230px);
 }
 /* navigation */
 nav{

@@ -3,11 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="styles.css">
     <script src="game.js"></script>
-    <link rel="stylesheet" src="styles.css">
-    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&family=Rubik+Iso&display=swap');
+
+        html {
+        cursor: url('openhand2.png'), default;
+        }
+
+    </style>
+    <title>game</title>
 </head>
 <body>
-    
+
+    <!-- title -->
+    <div class="titlecontainer">
+    <h1>care for a sticker?</h1><br><br>
+    </div>
+    <!-- sticker options select  -->
+    <div class="stickeroptions" id="stickeroptions">
+        <img src="mouth.png" class="mouthsticker" id="mouthsticker">
+        <img src="fire.png" class="firesticker" id="firesticker">
+        <img src="girl.png" class="girlsticker" id="girlsticker">
+        <img src="monster.png"  class="monstersticker" id="monstersticker">
+        <img src="blush.png" class="blushsticker" id="blushsticker">
+
+    </div>
+
+    <!-- actual canvas for pasting -->
+    <div class="canvas" id="canvas"> 
+        <img src="paper.jpg" class="paper" id="paper"> 
+    </div>
+
+    <!-- paper options select -->
+    <div class="paperoptions">
+        <button class="reset" id="reset">clear</button><br><br>
+
+        <img src="paper.jpg" class="papericon" id="papericon"> 
+        <br><br>
+        <img src="paper2.jpg" class="paper2icon" id="paper2icon"> 
+    </div>
+
+    <nav>
+        <a href="index.html">home </a>&emsp;
+        <a href="cv.html">cv </a>&emsp;
+        <a href="about.html">about/contact </a>&emsp;
+        <a href="game.html">game!</a>&emsp;
+    </nav>
+
 </body>
 </html>

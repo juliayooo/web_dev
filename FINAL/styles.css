@@ -3,8 +3,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: center;
     height: 100vh;
     width: 100vw;
+    text-align: center;
 }
 /* font  */
 .rubik-iso-regular {
@@ -149,4 +151,53 @@ nav a{
 .nose:hover{
     transform: scale(200%);
     transition: 1s;
+}
+.stickeroptions{
+    display: block;
+    background-color: white;
+    margin-left: 15vw;
+    justify-content: space-around;
+    right: 0%;
+
+}
+.stickeroptions img{
+    justify-content: space-around;
+    width: 8vw;
+}
+.canvas{
+    margin-left: 10vw;
+    
+}
+.paperoptions{
+    display: block;
+    margin: 10vw;
+    margin-right: 15vw;
+    justify-content: space-around;
+    /* right: 0%; */
+    padding: 50px;
+
+
+}
+.paperoptions img{
+    justify-content: space-around 100px;
+}
+.papericon{
+    width: 15vw;
+}
+.paper2icon{
+    width: 15vw;
+}
+h1{
+    font-size: 50px;
+    font-family: "Rubik Iso", system-ui;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    display: inlne;
+}
+.titlecontainer{
+    width: 100vw;
+    height: 10vh;
+    top: 0px;
+    position: absolute;
 }

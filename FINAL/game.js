@@ -11,7 +11,7 @@ addEventListener("DOMContentLoaded", () => {
     const blushSticker = document.getElementById("blushsticker");
     const stickerOptions = document.getElementById("stickeroptions");
     let currSticker = document.getElementById("mouthsticker");
-    let currPaper = document.getElementById("paper.jpg");
+    let currPaper = "paper.jpg";
 
     // select paper option
     paperop1.addEventListener("click", () => {

@@ -4,6 +4,7 @@ addEventListener("DOMContentLoaded", () => {
     const paperop2 = document.getElementById("paper2icon");
     const reset = document.getElementById("reset");
     const canvas = document.getElementById("canvas");
+    const paper = document.getElementById("paper");
     const mouthSticker = document.getElementById("mouthsticker");
     const fireSticker = document.getElementById("firesticker");
     const girlSticker = document.getElementById("girlsticker");

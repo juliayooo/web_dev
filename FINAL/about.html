@@ -4,13 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&family=Rubik+Iso&family=Rubik+Vinyl&display=swap');
+
+        body{
+            height: 500vh;
+        }
+        .blush{
+            left: 0;
+            top: 50vh;
+            width: 150px;
+            position: fixed;
+        }
+        p{
+            font-family: Rubik Vinyl, system-ui;
+            top: 100vh;
+            position: absolute;
+            font-size: 30px;
+        }
+    </style>
     <title>about/contact</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            console.log("loaded");
+        const text = document.querySelector('.info');
+        const blush = document.querySelector('.blush');
+        const width = document.documentElement.clientWidth;
+        const height = document.documentElement.clientHeight;
+        gsap.registerPlugin(ScrollTrigger);
+        let tl = gsap.timeline();
+
+        tl.to(blush, 
+        {
+            rotation: 360,
+            x: 50,
+            scrollTrigger: {
+                trigger: text,
+                start: "top 50%",
+                scrub: true,
+                markers: true,
+              }
+        });
+
+        });
+    </script>
+
 </head>
 <body>
     
 
     <div class="aboutcontainer">
+        <img src="blush.png" class="blush" id="blush">
 
+        <p class="info">
+            Julia blah blah <br> 
+            more <br> 
+            more <br>
+            more
+        </p>
 
     </div>
 

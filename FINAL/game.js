@@ -1,3 +1,19 @@
+import { initializeApp } from "firebase/app";
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+    apiKey: "AIzaSyBCpFPBlNwtARb-H9FG1rv6WABFCb1hLg0",
+    authDomain: "portfolio-site-196ba.firebaseapp.com",
+    projectId: "portfolio-site-196ba",
+    storageBucket: "portfolio-site-196ba.firebasestorage.app",
+    messagingSenderId: "848012280700",
+    appId: "1:848012280700:web:62b4384cab6f33b8af1af9",
+    measurementId: "G-SJKBNX9JFP"
+  };
+  
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+
 addEventListener("DOMContentLoaded", () => {
 
     const paperop1 = document.getElementById("papericon");
@@ -16,18 +32,25 @@ addEventListener("DOMContentLoaded", () => {
 
     // select paper option
     paperop1.addEventListener("click", () => {
-        currPaper = "paper.jpg";
+        currPaper = 'paper.jpg';
         canvas.innerHTML = "<img src='" + currPaper + "' class='paper' id='paper'>";
+        paper = document.getElementById("paper");
+
 
     });
     paperop2.addEventListener("click", () => {
-        currPaper = "paper2.jpg";
+        currPaper = 'paper2.jpg';
         canvas.innerHTML = "<img src='" + currPaper + "' class='paper' id='paper'>";
+        paper = document.getElementById("paper");
+
 
     });
 
     reset.addEventListener("click", () => {
+
         canvas.innerHTML = "<img src='" + currPaper + "' class='paper' id='paper'>";
+        paper = document.getElementById("paper");
+
     });
     // select sticker option
     stickerOptions.addEventListener("click", (e) => {

@@ -16,12 +16,13 @@ addEventListener("DOMContentLoaded", () => {
 
     // select paper option
     paperop1.addEventListener("click", () => {
-        paper.src = "paper.jpg";
         currPaper = "paper.jpg";
+        canvas.innerHTML = "<img src='" + currPaper + "' class='paper' id='paper'>";
+
     });
     paperop2.addEventListener("click", () => {
-        paper.src = "paper2.jpg";
         currPaper = "paper2.jpg";
+        canvas.innerHTML = "<img src='" + currPaper + "' class='paper' id='paper'>";
 
     });
 

@@ -12,8 +12,11 @@
     "author": "Julia Yoo",
     "license": "MIT",
     "dependencies": {
+        "@gltf-transform/core": "^4.1.1",
         "firebase": "^9.23.0",
+        "gltf-pipeline": "^4.1.0",
         "gsap": "^3.12.5",
+        "html2canvas": "^1.4.1",
         "three": "^0.158.0"
     },
     "devDependencies": {

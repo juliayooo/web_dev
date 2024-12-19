@@ -1,5 +1,8 @@
 import { initializeApp } from "firebase/app";
+import html2canvas from 'html2canvas'; 
+
 // Your web app's Firebase configuration
+
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
     apiKey: "AIzaSyBCpFPBlNwtARb-H9FG1rv6WABFCb1hLg0",
@@ -13,14 +16,16 @@ const firebaseConfig = {
   
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
+//   const storage = getStorage(app);
 
-addEventListener("DOMContentLoaded", () => {
+  addEventListener("DOMContentLoaded", () => {
 
     const paperop1 = document.getElementById("papericon");
     const paperop2 = document.getElementById("paper2icon");
     const reset = document.getElementById("reset");
-    const canvas = document.getElementById("canvas");
-    const paper = document.getElementById("paper");
+    const mycanvas = document.getElementById("mycanvas");
+    const saveLib = document.getElementById("saveLib");
+    let paper = document.getElementById("paper");
     const mouthSticker = document.getElementById("mouthsticker");
     const fireSticker = document.getElementById("firesticker");
     const girlSticker = document.getElementById("girlsticker");
@@ -28,30 +33,32 @@ addEventListener("DOMContentLoaded", () => {
     const blushSticker = document.getElementById("blushsticker");
     const stickerOptions = document.getElementById("stickeroptions");
     let currSticker = document.getElementById("mouthsticker");
-    let currPaper = "paper.jpg";
+    let currPaper = "assets/paper.jpg";
 
     // select paper option
     paperop1.addEventListener("click", () => {
-        currPaper = 'paper.jpg';
-        canvas.innerHTML = "<img src='" + currPaper + "' class='paper' id='paper'>";
+        currPaper = 'assets/paper.jpg';
+        mycanvas.innerHTML = "<img src='" + currPaper + "' class='paper' id='paper'>";
         paper = document.getElementById("paper");
 
 
     });
     paperop2.addEventListener("click", () => {
-        currPaper = 'paper2.jpg';
-        canvas.innerHTML = "<img src='" + currPaper + "' class='paper' id='paper'>";
+        currPaper = 'assets/paper2.jpg';
+        mycanvas.innerHTML = "<img src='" + currPaper + "' class='paper' id='paper'>";
         paper = document.getElementById("paper");
 
 
     });
 
+    // reset button 
     reset.addEventListener("click", () => {
 
-        canvas.innerHTML = "<img src='" + currPaper + "' class='paper' id='paper'>";
+        mycanvas.innerHTML = "<img src='" + currPaper + "' class='paper' id='paper'>";
         paper = document.getElementById("paper");
 
     });
+
     // select sticker option
     stickerOptions.addEventListener("click", (e) => {
 
@@ -75,20 +82,26 @@ addEventListener("DOMContentLoaded", () => {
     });
 
     // paste sticker
-    canvas.addEventListener("click", (e) => {
+    mycanvas.addEventListener("click", (e) => {
         let sticker = document.createElement("img");
         sticker.src = currSticker.src;
         sticker.style.position = "absolute";
         sticker.style.top = e.clientY + "px";
         sticker.style.left = e.clientX + "px";
         sticker.style.width = "8vw";
-        canvas.appendChild(sticker);
+        mycanvas.appendChild(sticker);
         console.log(e.clientX, e.clientY);
 
     });
 
+    // save to library
+    saveLib.addEventListener("click", () => {
+        html2canvas(mycanvas).then(canvas => {
+            document.body.appendChild(canvas)
+        });
+    });
+
 });
 
-function pasteSticker(stickerName){
 
-}
+

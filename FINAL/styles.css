@@ -5,7 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     align-content: center;
-    height: 100vh;
+    height: 200vh;
     width: 100vw;
     /* text-align: center; */
 }
@@ -17,7 +17,7 @@ body {
   }
   
 .items_container {
-    background-color: white;
+    /* background-color: white; */
     width: 60vw;
     height: 70vh;
     display: flex;
@@ -84,10 +84,11 @@ body {
 }
 /* images  */
 .hair{
-    /* position: fixed;
-    display: flex; */
-    width: 300px;
+    position: absolute;
+    /* display: flex;  */
+    width: 60vw;
     transform: translateY(100px) ;
+    transform: translateX(15vw);
 
 }
 .eye_left{
@@ -165,8 +166,9 @@ nav a{
     justify-content: space-around;
     width: 8vw;
 }
-.canvas{
+.mycanvas{
     margin-left: 10vw;
+    padding-top: 8vh;
 
 }
 .paperoptions{
@@ -201,4 +203,5 @@ h1{
     height: 10vh;
     top: 0px;
     position: absolute;
+
 }

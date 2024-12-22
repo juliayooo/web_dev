@@ -32,7 +32,7 @@ body {
 }
 .grid_item {
 
-    border: 1px solid #aeaeae;
+    /* border: 1px solid #aeaeae; */
     height: 100%;
     width: 20vw;
     display: flex; 

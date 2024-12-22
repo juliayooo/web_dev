@@ -1,6 +1,10 @@
-import * as THREE from "three";
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+// import * as THREE from "three";
+// import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+// import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.152.0/build/three.module.js';
+import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.152.0/examples/jsm/loaders/GLTFLoader.js';
+import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.152.0/examples/jsm/controls/OrbitControls.js';
 
 const nose = document.getElementById('g3');
 const rcbox = document.getElementById('g6');

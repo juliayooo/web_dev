@@ -5,7 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     align-content: center;
-    height: 130vh;
+    height: 110vh;
     width: 100vw;
     /* text-align: center; */
 }
@@ -32,7 +32,7 @@ body {
 }
 .grid_item {
 
-    /* border: 1px solid #aeaeae; */
+    border: 1px solid #aeaeae;
     height: 100%;
     width: 20vw;
     display: flex; 
@@ -123,8 +123,9 @@ body {
 }
 
 .LC{
-    width: 10vw;
-    /* transform: translateX(120px) translateY(-150px); */
+    width: 20vw;
+    transform: translateX(60px) translateY(-40px);
+
 }
 .RC{
     width: 10vw;

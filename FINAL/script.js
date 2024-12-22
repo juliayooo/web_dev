@@ -68,7 +68,7 @@ model = gltf.scene;
 
 // Scale 
 model.scale.set(8, 8, 8);  
-model.position.set(0.3, -0.3, 0.3);
+model.position.set(0.1, -0.3, 0.3);
 model.rotation.x= 20.3;
 model.rotation.y= -14.5;
 scene.add(model);
@@ -86,11 +86,11 @@ loader2.load( 'assets/revisedrc.glb', function ( gltf ) {
     rc = gltf.scene;
     
     // Scale 
-    rc.scale.set(22, 22, 22);  
-    rc.position.set(-0.3, -0.3, 3);
+    rc.scale.set(20, 20, 20);  
+    rc.position.set(-0.5, -0.3, 2.9);
     rc.rotation.y= -45;
-    rc.rotation.x= 0.1;
-    rc.rotation.z= 0.4;
+    rc.rotation.x= 0.2;
+    rc.rotation.z= 0.3;
 
 
 

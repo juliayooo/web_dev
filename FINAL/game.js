@@ -1,11 +1,10 @@
 // import { initializeApp } from "firebase/app";
 // import html2canvas from 'html2canvas'; 
 // import { getStorage, ref, uploadString, getDownloadURL } from "firebase/storage";
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.2/html2canvas.min.js"></script>
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js";
 import { getStorage, ref, uploadString, getDownloadURL } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-storage.js";
-
+import html2canvas from 'html2canvas';
 // Your web app's Firebase configuration
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional

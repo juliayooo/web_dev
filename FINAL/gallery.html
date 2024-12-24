@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>GALLERY</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&family=Rubik+Iso&family=Rubik+Vinyl&display=swap');
+        .gogame{
+            font-size: 20px;
+            color: black;
+            font-style: italic;
+            position: absolute;
+        }
+        .assets_container img{
+            width: 20vw;
+            margin: 30px;
+            
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <!-- title -->
+    <div class="titlecontainer">
+        <h1>gallery <br> <a class="gogame" href="game.html">... or make your own</a> </h1>
+        
+        <br><br><br>
+        </div>
+        
+        <div class="assets_container">
+
+
+        </div>
+        <nav>
+            <a href="index.html">home </a>&emsp;
+            <a href="cv.html">cv </a>&emsp;
+            <a href="about.html">about/contact </a>&emsp;
+            <a href="game.html">game!</a>&emsp;
+        </nav>
+    
+    <script type="module">
+    import { initializeApp } from "firebase/app";
+    import { getStorage, ref, listAll, getDownloadURL } from "firebase/storage";
+
+    const firebaseConfig = {
+    apiKey: "AIzaSyBCpFPBlNwtARb-H9FG1rv6WABFCb1hLg0",
+    authDomain: "portfolio-site-196ba.firebaseapp.com",
+    projectId: "portfolio-site-196ba",
+    storageBucket: "portfolio-site-196ba.firebasestorage.app",
+    messagingSenderId: "848012280700",
+    appId: "1:848012280700:web:62b4384cab6f33b8af1af9",
+    measurementId: "G-SJKBNX9JFP"
+    };
+    
+    const app = initializeApp(firebaseConfig);
+    const storage = getStorage();
+    const assetsContainer = document.querySelector(".assets_container");
+// Function to list all files in the 'screenshots' folder
+async function loadImages() {
+    const folderRef = ref(storage, 'screenshots/');
+
+    try {
+        const list = await listAll(folderRef);
+
+        // Fetch URLs for each file
+        const urls = await Promise.all(
+            list.items.map(item => getDownloadURL(item))
+        );
+
+        // Display the images
+        urls.forEach(url => displayImage(url));
+    } catch (error) {
+        console.error("Error retrieving images:", error);
+    }
+}
+
+// Function to display an image
+function displayImage(url) {
+    const img = document.createElement("img");
+    img.src = url;
+    // img.style.width = "100px"; // Example styling
+    assetsContainer.appendChild(img); // Add the image to the page
+}
+
+// Call the function to load and display images
+loadImages();
+
+    </script>
+</body>
+</html>

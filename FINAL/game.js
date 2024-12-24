@@ -1,5 +1,7 @@
 import { initializeApp } from "firebase/app";
 import html2canvas from 'html2canvas'; 
+import { getStorage, ref, uploadString, getDownloadURL } from "firebase/storage";
+
 
 // Your web app's Firebase configuration
 
@@ -16,7 +18,7 @@ const firebaseConfig = {
   
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
-//   const storage = getStorage(app);
+  const storage = getStorage(app);
 
   addEventListener("DOMContentLoaded", () => {
 
@@ -97,7 +99,28 @@ const firebaseConfig = {
     // save to library
     saveLib.addEventListener("click", () => {
         html2canvas(mycanvas).then(canvas => {
-            document.body.appendChild(canvas)
+    
+             // Convert canvas to data URL
+        const imageData = canvas.toDataURL("image/png");
+
+        // Upload to Firebase Storage
+        const imageRef = ref(storage, `screenshots/screenshot-${Date.now()}.png`);
+        uploadString(imageRef, imageData, 'data_url')
+            .then(() => {
+                // Fetch the URL of the uploaded image
+                return getDownloadURL(imageRef);
+            })
+            .then(url => {
+                console.log("Image uploaded and available at:", url);
+            })
+            .then(() => {
+                window.location.href = "gallery.html";
+            })
+            .catch(error => {
+                console.error("Error uploading image:", error);
+            });
+
+
         });
     });
 

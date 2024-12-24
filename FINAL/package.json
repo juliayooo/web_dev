@@ -5,9 +5,8 @@
     "description": "My portfolio site",
     "main": "script.js",
     "scripts": {
-        "start": "live-server",
-        "build": "echo 'No build step defined yet'",
-        "test": "echo 'No tests defined yet'"
+    "start": "vite",
+    "build": "vite build"
     },
     "author": "Julia Yoo",
     "license": "MIT",

@@ -6,7 +6,6 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.0/firebase
 import { getStorage, ref, uploadString, getDownloadURL } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-storage.js";
 // import html2canvas from 'https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js';
 // Your web app's Firebase configuration
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
     apiKey: "AIzaSyBCpFPBlNwtARb-H9FG1rv6WABFCb1hLg0",

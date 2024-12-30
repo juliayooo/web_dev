@@ -6,7 +6,6 @@ body {
     justify-content: center;
     align-items: center;
     align-content: center;
-    height: 110vh;
     width: 100vw;
     /* text-align: center; */
 }
@@ -220,12 +219,10 @@ h1{
     color: black;
     text-decoration: none;
     text-align: center;
-    display: inlne;
 }
 .titlecontainer{
     width: 100vw;
     height: 10vh;
     top: 0px;
     position: absolute;
-
 }

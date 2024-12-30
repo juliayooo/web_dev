@@ -135,6 +135,7 @@ loader2.load( 'assets/revisedrc.glb', function ( gltf ) {
         } else {
             isHovered = false;
         }
+
     });
 
 
@@ -165,11 +166,11 @@ loader2.load( 'assets/revisedrc.glb', function ( gltf ) {
         if(mousey > 0.5){
             // Scale 
             
-            model.rotation.x = 45;
-
+            model.rotation.x = 20.3+ (24.7/mousey );
+// degree rotation to top is 45,but an addition fo 24.7 degrees from neut pos. 
         }
         else if(mousey < -0.5){
-            model.rotation.x= 19.9;
+            model.rotation.x= 20.3 - (19.9/mousey);
         }
         else{
             model.rotation.x= 20.3;
@@ -185,5 +186,6 @@ loader2.load( 'assets/revisedrc.glb', function ( gltf ) {
         renderer.render(scene, camera);
         rcrenderer.render(rcscene, rccamera);
     }
-
     animate();
+
+

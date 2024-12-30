@@ -95,36 +95,62 @@ body {
 
 }
 .eye_left{
-    /* position: fixed;
-    display: flex; */
+    transition: all 1s;
     position: absolute;
     width: 13vw;
     transform: translateX(7vw) translateY(50px);
 
 
 }
+
+.eye_left:hover{
+    transform: scale(200%) rotateY(180deg);
+    transition: 1s ease-in-out;
+}
+
 .eye_right{
+
     position: absolute;
     width: 13vw;
     transform: translateX(-150px) translateY(50px);
-
-
+    transition: all 1s;
 
 }
-.nose{
-    /* position: fixed;
-    display: flex; */
-    width: 10vw;
+.eye_right:hover{
+    transform: scale(200%) rotateY(180deg);
+    transition: 1s ease-in-out;
 }
+
+
+/* .g3 canvas{
+    transition: all 1s;
+
+}
+.g3 canvas:hover{
+    transform: scale(200%) rotateY(180deg);
+    transition: 1s;
+} */
+
 .mouth{
-
+    transition: all 1s;
     width: 10vw;
+}
+.mouth:hover{
+    transform: scale(200%) rotateY(180deg) translateY(-10vh);
+    transition: 1s ease-in-out;
 }
 
 .LC{
     width: 15vw;
     transform: translateX(7vw) translateY(-5vh);
+    transition: all 1s;
 
+}
+
+.LC:hover{
+    transform: scale(200%) rotateY(180deg);
+
+    transition: 1s ease-in-out;
 }
 
 .chin{

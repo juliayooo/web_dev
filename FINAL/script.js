@@ -9,7 +9,7 @@ import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.152.0/exampl
 const nose = document.getElementById('g3');
 const rcbox = document.getElementById('g6');
 const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera( 75, window.innerWidth/ window.innerHeight, 0.1, 1000);
+const camera = new THREE.PerspectiveCamera( 75, window.innerWidth/ window.innerHeight, 0.5, 1000);
 // intialize a renderer and make the background clear 
 const renderer = new THREE.WebGLRenderer( { alpha: true } ); // init like this
 renderer.setClearColor( 0xffffff, 0 ); // second param is opacity, 0 => transparent
@@ -26,6 +26,8 @@ rcrenderer.setSize( window.innerWidth * 0.4, window.innerHeight * 0.6, false);
 
 rcbox.appendChild( rcrenderer.domElement );
 
+
+
 const light = new THREE.DirectionalLight(0xffffff, 1);
 const light2 = new THREE.DirectionalLight(0xffffff, 1);
 const light3 = new THREE.DirectionalLight(0xffffff, 1);
@@ -38,8 +40,16 @@ scene.add(light);
 scene.add(light2);
 rcscene.add(light3);
 rcscene.add(light4);
-// rcscene.add(light);
-// rcscene.add(light2);
+
+
+    // raycaster and mouse for hover effect
+    const raycaster = new THREE.Raycaster();
+    const mouse = new THREE.Vector2();
+
+    // hover state for hover effect
+    let isHovered = false;
+    let mousex = 0;
+    let mousey = 0;
 
 
 // Allowing user to use orbit control 
@@ -104,6 +114,30 @@ loader2.load( 'assets/revisedrc.glb', function ( gltf ) {
     
     } );
 
+    // Listen for Mouse Move
+    document.addEventListener('mousemove', (event) => {
+        const rect = rcrenderer.domElement.getBoundingClientRect(); // Get the canvas position and size
+
+        // Convert mouse position to normalized device coordinates relative to the canvas
+        mouse.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
+        mouse.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
+        
+        mousex = (event.clientX / window.innerWidth) * 2 - 1;
+        mousey = -(event.clientY / window.innerHeight) * 2 + 1;
+
+        // Perform Raycasting
+        raycaster.setFromCamera(mouse, camera);
+        const intersects = raycaster.intersectObject(rc);
+
+        // Check if the mouse is hovering over the cube
+        if (intersects.length > 0) {
+            isHovered = true;
+        } else {
+            isHovered = false;
+        }
+    });
+
+
     function animate() {
         requestAnimationFrame(animate);
     
@@ -116,14 +150,40 @@ loader2.load( 'assets/revisedrc.glb', function ( gltf ) {
         if (rc) {
             rc.rotation.y += 0.00001; // Optional rotation for `rc`
         }
+
+        if (isHovered) {
+            rc.rotation.y += 0.01;
+            rc.rotation.x += 0.01;
+            
+
+        }
+        else if (!isHovered){
+            //             // Scale 
+            rc.rotation.y= -45;
+            rc.rotation.x= 0.2;
+        }
+        if(mousey > 0.5){
+            // Scale 
+            
+            model.rotation.x = 45;
+
+        }
+        else if(mousey < -0.5){
+            model.rotation.x= 19.9;
+        }
+        else{
+            model.rotation.x= 20.3;
+            model.rotation.y= -14.5;
+        }
+        
     
         // Update controls
         controls.update();
         rccontrols.update();
-    
+
         // Render scenes
         renderer.render(scene, camera);
         rcrenderer.render(rcscene, rccamera);
     }
-    
+
     animate();

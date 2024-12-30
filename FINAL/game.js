@@ -1,5 +1,5 @@
 // import { initializeApp } from "firebase/app";
-// import html2canvas from 'html2canvas'; 
+import html2canvas from 'html2canvas'; 
 // import { getStorage, ref, uploadString, getDownloadURL } from "firebase/storage";
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js";

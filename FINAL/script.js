@@ -10,15 +10,17 @@ const nose = document.getElementById('g3');
 const rcbox = document.getElementById('g6');
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera( 75, window.innerWidth/ window.innerHeight, 0.5, 1000);
+
 // intialize a renderer and make the background clear 
 const renderer = new THREE.WebGLRenderer( { alpha: true } ); // init like this
 renderer.setClearColor( 0xffffff, 0 ); // second param is opacity, 0 => transparent
-renderer.setSize( window.innerWidth * 0.2, window.innerHeight * 0.3, false);
+renderer.setSize( window.innerWidth * 0.5, window.innerHeight * 0.5, false);
 
 nose.appendChild( renderer.domElement );
 
 const rcscene = new THREE.Scene();
 const rccamera = new THREE.PerspectiveCamera( 75, window.innerWidth/ window.innerHeight, 0.1, 1000);
+
 // intialize a renderer and make the background clear 
 const rcrenderer = new THREE.WebGLRenderer( { alpha: true } ); // init like this
 rcrenderer.setClearColor( 0xffffff, 0 ); // second param is opacity, 0 => transparent
@@ -32,6 +34,7 @@ const light = new THREE.DirectionalLight(0xffffff, 1);
 const light2 = new THREE.DirectionalLight(0xffffff, 1);
 const light3 = new THREE.DirectionalLight(0xffffff, 1);
 const light4 = new THREE.DirectionalLight(0xffffff, 1);
+
 light.position.set(20, 20, 20).normalize();
 light2.position.set(-20, 0, 20).normalize();
 light3.position.set(20, 20, 20).normalize();
@@ -56,7 +59,7 @@ rcscene.add(light4);
 const controls = new OrbitControls( camera, renderer.domElement );
 const rccontrols = new OrbitControls( rccamera, renderer.domElement );
 
-camera.position.set( 0, 0, 6 );
+camera.position.set( 0, 0, 5 );
 rccamera.position.set( 0, 0, 5 );
 
 // send the update to cam position 
@@ -68,19 +71,21 @@ rccontrols.update();
 const loader = new GLTFLoader();
 const loader2 = new GLTFLoader();
 
+// create models 
 let model;
 let rc;
 
-loader.load( 'assets/revisednose.glb', function ( gltf ) {
+// load the nose model 
+loader.load( 'assets/noserev2.glb', function ( gltf ) {
 console.log("loaded");
-	
+
 model = gltf.scene;
 
 // Scale 
-model.scale.set(8, 8, 8);  
-model.position.set(0.1, -0.3, 0.3);
-model.rotation.x= 20.3;
-model.rotation.y= -14.5;
+model.scale.set(9, 9, 9);  
+model.position.set(0, 0, 0);
+model.rotation.y= -1.6;
+model.rotation.z= 0;
 scene.add(model);
 console.log("added");
 
@@ -114,16 +119,26 @@ loader2.load( 'assets/revisedrc.glb', function ( gltf ) {
     
     } );
 
+    animate();
+
+    function animate() {
+        requestAnimationFrame(animate);
+    
+
+
     // Listen for Mouse Move
     document.addEventListener('mousemove', (event) => {
+
+      
         const rect = rcrenderer.domElement.getBoundingClientRect(); // Get the canvas position and size
 
-        // Convert mouse position to normalized device coordinates relative to the canvas
-        mouse.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
-        mouse.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
+        console.log("x: " , event.clientX, "y: ", event.clientY);
+        // // Convert mouse position to normalized device coordinates relative to the canvas
+        mousex = ((event.clientX - rect.left) / rect.width );
+        mousey = ((event.clientY - rect.top) / rect.height);
         
-        mousex = (event.clientX / window.innerWidth) * 2 - 1;
-        mousey = -(event.clientY / window.innerHeight) * 2 + 1;
+        // mousex = (event.clientX / window.innerWidth);
+        // mousey = (event.clientY / window.innerHeight);
 
         // Perform Raycasting
         raycaster.setFromCamera(mouse, camera);
@@ -135,57 +150,44 @@ loader2.load( 'assets/revisedrc.glb', function ( gltf ) {
         } else {
             isHovered = false;
         }
+        
+
+
 
     });
+        if(model){
+           
 
-
-    function animate() {
-        requestAnimationFrame(animate);
-    
-        // Continuous rotation for model
-        if (model) {
-            model.rotation.y += 0.00001;
-        }
-    
-        // Continuous rotation for rc
-        if (rc) {
-            rc.rotation.y += 0.00001; // Optional rotation for `rc`
-        }
-
-        if (isHovered) {
-            rc.rotation.y += 0.01;
-            rc.rotation.x += 0.01;
+                //rotation limits
+                const maxzRotation = THREE.MathUtils.degToRad(-90); 
+                const minzRotation = THREE.MathUtils.degToRad(0); 
+                const maxxRotation = THREE.MathUtils.degToRad(180); 
+                const minxRotation = THREE.MathUtils.degToRad(-630); 
             
+             console.log("mousey: ", mousey);
+                // Map normalized mousey (0-1) to rotation range
+                const mappedzRotation = THREE.MathUtils.lerp(minzRotation,maxzRotation, mousey);
+                const mappedxRotation = THREE.MathUtils.lerp(minxRotation,maxxRotation, mousex);
+                // Smoothly transition to the desired rotation
+                // model.rotation.x = THREE.MathUtils.clamp(model.rotation.x, minRotation, maxRotation);
 
-        }
-        else if (!isHovered){
-            //             // Scale 
-            rc.rotation.y= -45;
-            rc.rotation.x= 0.2;
-        }
-        if(mousey > 0.5){
-            // Scale 
-            
-            model.rotation.x = 20.3+ (24.7/mousey );
-// degree rotation to top is 45,but an addition fo 24.7 degrees from neut pos. 
-        }
-        else if(mousey < -0.5){
-            model.rotation.x= 20.3 - (19.9/mousey);
-        }
-        else{
-            model.rotation.x= 20.3;
-            model.rotation.y= -14.5;
-        }
+                model.rotation.z = THREE.MathUtils.lerp(model.rotation.z, mappedzRotation, 0.1);
+                model.rotation.y = THREE.MathUtils.lerp(model.rotation.x, mappedxRotation, 0.1);
+
+console.log("mousey: ", mousey, "mappedxRotation: ", mappedxRotation);
+
         
     
-        // Update controls
-        controls.update();
-        rccontrols.update();
-
-        // Render scenes
-        renderer.render(scene, camera);
-        rcrenderer.render(rcscene, rccamera);
+       
     }
-    animate();
+    
 
+     // Update controls
+     controls.update();
+     rccontrols.update();
 
+     // Render scenes
+     renderer.render(scene, camera);
+     rcrenderer.render(rcscene, rccamera);
+    }
+    

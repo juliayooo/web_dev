@@ -23,7 +23,26 @@
 
     
     <div class="items_container">
-        <div class="project_container"></div>
+        <div class="project_container">
+            <div class="ELproj" id="proj"> 
+                <h1>LOVE BOT</h1>
+                Love Bot (tentative) is a neural-network powered robot that learns the user’s facial preferences and using real time camera input, detects faces that the user may like. 
+The user trains the robot on a dataset of images of faces, varying in age, gender and race (scraped from thispersondoesnotexist.com), selecting yes or no. The outputted organized dataset is then used to train Love Bot’s neural network, built upon several other pre-trained models for feature extraction, image recognition, etc. The fine-tuned model, running inside the doll’s shell will then be connected to a small camera in the doll’s eye. Using pre-trained facial recognition models, the network will then evaluate if a detected face matches the user’s preferences. If yes the robot will indicate, likely with an LED light. Bot will be building upon Open CV and potentially Google ML KIT feature extraction coordinates. The robot is a study of biases in the training of AI, dating app algorithms, an experiment in combining the vanity culture of dating apps and real world interaction. 
+            </div>
+            <div class="ERproj" id="proj">
+                <h1>TUNER</h1>
+            </div>
+            <div class ="LCproj" id="proj"> 
+                <h1>GERP</h1>
+            </div>
+            <div class="RCproj" id="proj">
+                <h1></h1>
+            </div>
+            <div class ="MTHproj" id="proj">
+                <h1>WEB ART </h1>
+            </div>
+
+        </div>
         <div class="grid_container">
             <div class="grid_item g1">
                 <!-- <img class="hair" src="assets/hair.png"> -->
@@ -49,9 +68,7 @@
             </div>
             <div class="grid_item g8">8</div>
             <div class="grid_item g9">
-                <img class="chin" src="assets/chin.png">
-
-            </div>
+                <img class="chin" src="assets/chin.png"></div>
             <!-- <div class="grid_item g10">10</div>
                 
 
@@ -70,16 +87,27 @@
     </nav>
     
 <script>
-    // script for project pop-ups 
+    // script for project pop-ups
+
+                                                    // TO DO: ADD A SILLY NOISE TO THE NOSE WHEN CLICKED 
+    // all necessary variables 
+
+    const project_container = document.querySelector(".project_container");
     const LC = document.querySelector(".LC");
     const mouth = document.querySelector(".mouth");
-    const project_container = document.querySelector(".project_container");
     const eye_right = document.querySelector(".eye_right");
     const eye_left = document.querySelector(".eye_left");
+    const LCproj = document.querySelector(".LCproj");
+    const MTHproj = document.querySelector(".MTHproj");
+    const ELproj = document.querySelector(".ELproj");
+    const ERproj = document.querySelector(".ERproj");
+
+
     LC.addEventListener("click", function(){
        
             LC.style.transform = "scale(200%) rotateY(180deg)";
             project_container.style.display = "block";
+            LCproj.style.display = "flex";
 
        
     })
@@ -87,18 +115,20 @@
        
        mouth.style.transform = "scale(150%) rotateY(180deg) translateY(10vh)";
        mouth.style.zIndex = "2";
-
        project_container.style.display = "block";
+       MTHproj.style.display = "flex";
     })
     eye_right.addEventListener("click", function(){
        
        eye_right.style.transform = "scale(200%) rotateY(180deg) translateY(15vh)";
        project_container.style.display = "block";
+       ERproj.style.display = "flex";
     })
     eye_left.addEventListener("click", function(){
-       console.log("clicked");
+
        eye_left.style.transform = "scale(170%) rotateY(180deg) translateY(8vh)";
        project_container.style.display = "block";
+       ELproj.style.display = "flex";
     })
     project_container.addEventListener("mouseleave", function(){
         LC.style.transform = " translateX(7vw) translateY(-5vh)";
@@ -106,6 +136,12 @@
         project_container.style.display = "none";
         eye_right.style.transform = "translateX(-150px) translateY(50px)";
         eye_left.style.transform = "translateX(7vw) translateY(50px)";
+        LCproj.style.display = "none";
+        MTHproj.style.display = "none";
+        ELproj.style.display = "none";
+        ERproj.style.display = "none";
+
+
     })
 
 </script>

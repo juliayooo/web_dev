@@ -24,16 +24,17 @@ body {
     font-style: normal;
   }
 .project_container{
-    width: 80vw;
+    width: 60vw;
     height: 50vh;
     display: none;
-    background-color: rgba(86, 161, 98, 0.374);
+    background-color: rgba(255, 255, 255, 0.374);
     position: absolute;
     z-index: 1;
     /* align-content: center; */
     justify-items: center;
     justify-content: center;
     top: 25vh;
+    border-radius: 250px;
 }
 
 
@@ -226,4 +227,18 @@ h1{
     height: 10vh;
     top: 0px;
     position: absolute;
+}
+.project_container{
+    z-index: 4;
+}
+#proj{
+    font-family: 'Syne Mono';
+    display: none;
+    color: black;
+    font-size: 15px;
+}
+.ELproj{
+    color: black;
+    display: visible;
+    z-index: 4;
 }

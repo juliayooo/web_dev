@@ -53,6 +53,8 @@ rcscene.add(light4);
     let isHovered = false;
     let mousex = 0;
     let mousey = 0;
+    let clickx = 0;
+    let clicky = 0;
 
 
 // Allowing user to use orbit control 
@@ -137,6 +139,43 @@ loader2.load( 'assets/revisedrc.glb', function ( gltf ) {
         mousex = ((event.clientX - rect.left) / rect.width );
         mousey = ((event.clientY - rect.top) / rect.height);
  
+        
+
+
+    });
+    const project_container = document.querySelector('.project_container');
+    project_container.addEventListener('mouseleave', (event) => {
+        project_container.style.display = "none";
+            rc.rotation.y= -45;
+
+        
+    });
+     // Listen for Mouse Move
+     document.addEventListener('click', (event) => {
+
+      
+        const rect = rcrenderer.domElement.getBoundingClientRect(); // Get the canvas position and size
+        mouse.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
+        mouse.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
+    
+        // Update raycaster with camera and mouse position
+        raycaster.setFromCamera(mouse, rccamera);
+    
+        // Check for intersections with the rc model
+        const intersects = raycaster.intersectObject(rc, true);
+        let rotationY = THREE.MathUtils.degToRad(-1);
+        if(rc){
+            if (intersects.length > 0) {
+                // Model was clicked, apply your transformation
+                rc.rotation.y = THREE.MathUtils.lerp(rc.rotation.y, rotationY, 0.0005);
+                rotationY = 0;
+                console.log('RC model clicked!');
+                project_container.style.display = "block";
+            }
+            
+        }
+        
+        
 
 
 
@@ -165,7 +204,7 @@ loader2.load( 'assets/revisedrc.glb', function ( gltf ) {
     
        
     }
-    
+   
 
      // Update controls
      controls.update();

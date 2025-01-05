@@ -164,7 +164,7 @@ loader2.load( 'assets/revisedrc.glb', function ( gltf ) {
                 const maxxRotation = THREE.MathUtils.degToRad(180); 
                 const minxRotation = THREE.MathUtils.degToRad(-630); 
             
-             console.log("mousey: ", mousey);
+            //  console.log("mousey: ", mousey);
                 // Map normalized mousey (0-1) to rotation range
                 const mappedzRotation = THREE.MathUtils.lerp(minzRotation,maxzRotation, mousey);
                 const mappedxRotation = THREE.MathUtils.lerp(minxRotation,maxxRotation, mousex);
@@ -174,7 +174,6 @@ loader2.load( 'assets/revisedrc.glb', function ( gltf ) {
                 model.rotation.z = THREE.MathUtils.lerp(model.rotation.z, mappedzRotation, 0.1);
                 model.rotation.y = THREE.MathUtils.lerp(model.rotation.x, mappedxRotation, 0.1);
 
-console.log("mousey: ", mousey, "mappedxRotation: ", mappedxRotation);
 
         
     

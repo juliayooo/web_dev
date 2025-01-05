@@ -14,8 +14,11 @@ async function getData() {
         const page = document.getElementById("textcontainer");
         data.forEach((line) => {
             
-            if(!line.text == ""){
+            if(line.text !== "" && line.text !== "/"){
                 page.innerHTML += line.text;
+                page.innerHTML += "<br>";
+            }
+            else if(line.text === "/"){
                 page.innerHTML += "<br>";
             }
         }

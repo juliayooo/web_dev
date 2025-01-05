@@ -23,7 +23,7 @@
 
     
     <div class="items_container">
-
+        <div class="project_container"></div>
         <div class="grid_container">
             <div class="grid_item g1">
                 <!-- <img class="hair" src="assets/hair.png"> -->
@@ -69,5 +69,30 @@
         <a href="game.html">game!</a>&emsp;
     </nav>
     
+<script>
+    // script for project pop-ups 
+    const LC = document.querySelector(".LC");
+    const mouth = document.querySelector(".mouth");
+    const project_container = document.querySelector(".project_container");
+    LC.addEventListener("click", function(){
+       
+            LC.style.transform = "scale(200%) rotateY(180deg)";
+            project_container.style.display = "block";
+
+       
+    })
+    mouth.addEventListener("click", function(){
+       
+       mouth.style.transform = "scale(200%) rotateY(180deg) translateY(-10vh)";
+       project_container.style.display = "block";
+
+  
+})
+    project_container.addEventListener("mouseleave", function(){
+        LC.style.transform = " translateX(7vw) translateY(-5vh)";
+        project_container.style.display = "none";
+    })
+
+</script>
 </body>
 </html>

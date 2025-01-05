@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&family=Rubik+Iso&family=Rubik+Vinyl&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
 body {
     /* background-color: #d7f0ff; */
     background-color: white;
@@ -9,13 +11,33 @@ body {
     width: 100vw;
     /* text-align: center; */
 }
-/* font  */
+/* fonts  */
 .rubik-iso-regular {
     font-family: "Rubik Iso", system-ui;
     font-weight: 400;
     font-style: normal;
   }
-  
+
+  .syne-mono-regular {
+    font-family: "Syne Mono", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.project_container{
+    width: 80vw;
+    height: 50vh;
+    display: none;
+    background-color: rgba(86, 161, 98, 0.374);
+    position: absolute;
+    z-index: 1;
+    /* align-content: center; */
+    justify-items: center;
+    justify-content: center;
+    top: 25vh;
+}
+
+
+
 .items_container {
     /* background-color: white; */
     width: 60vw;
@@ -23,6 +45,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    justify-items: center;
 }
 .grid_container {
     position: absolute;
@@ -133,11 +156,9 @@ body {
 .mouth{
     transition: all 1s;
     width: 10vw;
+    transform:  scale(100%) rotateY(0deg) translateY(-0vh)
 }
-.mouth:hover{
-    transform: scale(200%) rotateY(180deg) translateY(-10vh);
-    transition: 1s ease-in-out;
-}
+
 
 .LC{
     width: 15vw;
@@ -145,12 +166,12 @@ body {
     transition: all 1s;
 
 }
-
+/* 
 .LC:hover{
     transform: scale(200%) rotateY(180deg);
 
     transition: 1s ease-in-out;
-}
+} */
 
 .chin{
     width: 10vw;

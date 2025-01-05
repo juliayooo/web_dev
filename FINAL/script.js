@@ -102,7 +102,7 @@ loader2.load( 'assets/revisedrc.glb', function ( gltf ) {
     
     // Scale 
     rc.scale.set(20, 20, 20);  
-    rc.position.set(-0.5, -0.3, 2.9);
+    rc.position.set(-0.4, -0.3, 2.9);
     rc.rotation.y= -45;
     rc.rotation.x= 0.2;
     rc.rotation.z= 0.3;
@@ -136,21 +136,7 @@ loader2.load( 'assets/revisedrc.glb', function ( gltf ) {
         // // Convert mouse position to normalized device coordinates relative to the canvas
         mousex = ((event.clientX - rect.left) / rect.width );
         mousey = ((event.clientY - rect.top) / rect.height);
-        
-        // mousex = (event.clientX / window.innerWidth);
-        // mousey = (event.clientY / window.innerHeight);
-
-        // Perform Raycasting
-        raycaster.setFromCamera(mouse, camera);
-        const intersects = raycaster.intersectObject(rc);
-
-        // Check if the mouse is hovering over the cube
-        if (intersects.length > 0) {
-            isHovered = true;
-        } else {
-            isHovered = false;
-        }
-        
+ 
 
 
 

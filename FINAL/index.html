@@ -28,7 +28,7 @@
             <div class="grid_item g1">
                 <!-- <img class="hair" src="assets/hair.png"> -->
             </div>
-            <div class="grid_item g2" class="g2">
+            <div class="grid_item g2" id="g2">
                 <img class="eye_left" src="assets/eye_left.png"> 
             </div>
             <div class="grid_item g3" id="g3">
@@ -74,6 +74,8 @@
     const LC = document.querySelector(".LC");
     const mouth = document.querySelector(".mouth");
     const project_container = document.querySelector(".project_container");
+    const eye_right = document.querySelector(".eye_right");
+    const eye_left = document.querySelector(".eye_left");
     LC.addEventListener("click", function(){
        
             LC.style.transform = "scale(200%) rotateY(180deg)";
@@ -83,14 +85,27 @@
     })
     mouth.addEventListener("click", function(){
        
-       mouth.style.transform = "scale(200%) rotateY(180deg) translateY(-10vh)";
-       project_container.style.display = "block";
+       mouth.style.transform = "scale(150%) rotateY(180deg) translateY(10vh)";
+       mouth.style.zIndex = "2";
 
-  
-})
+       project_container.style.display = "block";
+    })
+    eye_right.addEventListener("click", function(){
+       
+       eye_right.style.transform = "scale(200%) rotateY(180deg) translateY(15vh)";
+       project_container.style.display = "block";
+    })
+    eye_left.addEventListener("click", function(){
+       console.log("clicked");
+       eye_left.style.transform = "scale(170%) rotateY(180deg) translateY(8vh)";
+       project_container.style.display = "block";
+    })
     project_container.addEventListener("mouseleave", function(){
         LC.style.transform = " translateX(7vw) translateY(-5vh)";
+        mouth.style.transform = "scale(100%) rotateY(0deg) translateY(-0vh)";
         project_container.style.display = "none";
+        eye_right.style.transform = "translateX(-150px) translateY(50px)";
+        eye_left.style.transform = "translateX(7vw) translateY(50px)";
     })
 
 </script>

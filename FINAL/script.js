@@ -24,7 +24,7 @@ const rccamera = new THREE.PerspectiveCamera( 75, window.innerWidth/ window.inne
 // intialize a renderer and make the background clear 
 const rcrenderer = new THREE.WebGLRenderer( { alpha: true } ); // init like this
 rcrenderer.setClearColor( 0xffffff, 0 ); // second param is opacity, 0 => transparent
-rcrenderer.setSize( window.innerWidth * 0.4, window.innerHeight * 0.6, false);
+rcrenderer.setSize( window.innerWidth * 0.4, window.innerHeight * 0., false);
 
 rcbox.appendChild( rcrenderer.domElement );
 
@@ -104,7 +104,7 @@ loader2.load( 'assets/revisedrc.glb', function ( gltf ) {
     
     // Scale 
     rc.scale.set(20, 20, 20);  
-    rc.position.set(-0.4, -0.3, 2.9);
+    rc.position.set(-0.4, 0.3, 2.9);
     rc.rotation.y= -45;
     rc.rotation.x= 0.2;
     rc.rotation.z= 0.3;

@@ -18,6 +18,20 @@ nav a{
 .items_container{
     width: fit-content !important;
 }
+.ERproj{
+    flex-direction: column !important;
+    padding-top: 0  !important; 
+}
+.ELproj{
+    flex-direction: column !important;
+    padding-top: 0 !important;
+
+}
+.LCproj{
+    flex-direction: column !important;
+    padding-top: 0 !important;
+
+}
 }
 body {
     /* background-color: #d7f0ff; */
@@ -103,7 +117,8 @@ body {
 .g6{
     grid-column: 3 / 4;
     grid-row: 3 / 6;
-    transform: translateY(-9vh);
+    background-color: red;
+    /* transform: translateY(-9vh); */
 }
 .g8{
     grid-column: 1 / 2;

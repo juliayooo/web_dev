@@ -11,10 +11,52 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&family=Rubik+Iso&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+        @media only screen and (max-width: 800px) {
 
-        /* html {
-        cursor: url('openhand2.png'), default;
-        } */
+    }
+        @media only screen and (max-width: 1000px) {
+        body{
+            display: block !important;
+            justify-content: center !important;
+            align-items: center !important;
+
+        }
+        .mycanvas{
+            width: 80vw;
+            margin-top: 10vh;
+        }
+        .stickeroptions{
+            flex-direction: row !important;
+            display: inline-flex !important;
+            position: absolute !important;
+            align-content: center !important;
+            justify-content: space-between !important;
+            align-items: center !important;
+            width: 80vw !important;
+            height: 10vh !important;
+            margin-bottom: 10vh !important;
+            margin-left: 10vw !important;
+            
+        }
+        .stickeroptions img{
+            width: 13vw;
+
+        }
+        .paperoptions{
+            display: inline-flex !important;
+            justify-content: center !important;
+            
+        }
+        .titlecontainer{
+            position: static !important;
+            margin-bottom: 10vh !important;
+            
+        }
+        .paper{
+            width: 80vw;
+        }
+        }
+        
         .vlib{
             font-size: 20px;
             color: black;
@@ -26,6 +68,7 @@
             font-weight: bold;
             font-size: 20px;
         }
+        
     </style>
     <title>game</title>
 </head>
@@ -55,10 +98,10 @@
     <!-- paper options select -->
     <div class="paperoptions">
         <button class="reset" id="reset">CLEAR</button>
-        <button class="saveLib" id="saveLib">POST TO GALLERY</button><br><br>
+        <button class="saveLib" id="saveLib">POST TO GALLERY</button></br></br>
 
         <img src="assets/paper.jpg" class="papericon" id="papericon"> 
-        <br><br>
+        
         <img src="assets/paper2.jpg" class="paper2icon" id="paper2icon"> 
     </div>
 

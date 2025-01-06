@@ -88,9 +88,13 @@ const firebaseConfig = {
     mycanvas.addEventListener("click", (e) => {
         let sticker = document.createElement("img");
         sticker.src = currSticker.src;
+        const rect = mycanvas.getBoundingClientRect();
+        const x = e.clientX + window.scrollX;
+        const y = e.clientY + window.scrollY; ;
+        // account for scroll offset, specifically on mobile screen 
         sticker.style.position = "absolute";
-        sticker.style.top = e.clientY + "px";
-        sticker.style.left = e.clientX + "px";
+        sticker.style.top = y + "px";
+        sticker.style.left = x + "px";
         sticker.style.width = "8vw";
         mycanvas.appendChild(sticker);
         console.log(e.clientX, e.clientY);

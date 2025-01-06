@@ -1,9 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&family=Rubik+Iso&family=Rubik+Vinyl&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+/* responsive layout for phone */
+@media only screen and (max-width: 800px) {
+body{
+    width: 100vw;
+}
 
+nav{
+    display: block !important;
+    margin-right: 2vw;
+
+}
+nav a{
+    display: block !important;
+    font-size: 30px !important;
+}
+.items_container{
+    width: fit-content !important;
+}
+}
 body {
     /* background-color: #d7f0ff; */
     background-color: white;
+    background-image: url('assets/paper.jpeg');
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +46,7 @@ body {
     width: 30vw;
     height: 50vh;
     display: none;
-    background-color: rgba(255, 255, 255, 0.374);
+    background-color: rgba(255, 255, 255, 1);
     position: absolute;
     z-index: 1;
     /* align-content: center; */
@@ -35,6 +54,8 @@ body {
     justify-content: center;
     top: 25vh;
     border-radius: 250px;
+    box-shadow: 0 30px 40px rgba(0, 0, 0, 0.1);
+
 }
 
 
@@ -125,7 +146,7 @@ body {
 
     position: absolute;
     width: 13vw;
-    transform: translateX(-150px) translateY(50px);
+    transform: translateX(-8vw) translateY(50px);
     transition: all 1s;
     z-index: 2;
 
@@ -182,14 +203,13 @@ nav a{
     background-color: white;
     margin-left: 15vw;
     justify-content: space-around;
-    right: 0%;
 
 }
 .stickeroptions img{
-    justify-content: space-around;
     width: 8vw;
 }
 .mycanvas{
+    display: flex;
     margin-left: 10vw;
     padding-top: 8vh;
 
@@ -228,6 +248,7 @@ h1{
 }
 .project_container{
     z-index: 4;
+    
 
 }
 #proj{
@@ -235,6 +256,7 @@ h1{
     display: none;
     color: black;
     font-size: 15px;
+    
 }
 .ELproj{
     color: black;

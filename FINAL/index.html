@@ -7,6 +7,84 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&family=Rubik+Iso&display=swap');
+        p{
+            display: flex;
+            /* flex-direction: row; */
+            z-index : 2;
+            width: 50vw;
+            
+        }
+        #proj h1{
+            
+            z-index: 2;
+            
+        }
+        body{
+            height: 100vh;
+        }
+        .project_container{
+            z-index: 4;
+            
+        }
+        #proj{
+            font-family: 'Syne Mono';
+            display: none;
+            font-size: 15px;
+            position: relative;
+        }
+        .project_container{
+            width: 70vw;
+            height: 50vh;
+            display: none;
+            /* background-color: rgba(255, 255, 255, 1); */
+            position: absolute;
+            z-index: 1;
+            /* align-content: center; */
+            /* justify-items: center; */
+            /* justify-content: center; */
+            z-index: 5;
+
+        }
+        .ELproj{
+            color: black;
+            z-index: 4;
+            background-image: url('assets/lbbg.png');
+            background-size: 100%;
+            /* background-size: cover; */
+        }
+        .ELproj h1, .ELproj p{
+            color: black;
+            padding: 2vw;
+            
+        }
+        .ERproj{
+            color: white;
+            z-index: 4;
+            background-image: url('assets/php.png');
+            background-size: 100%;
+            flex-direction: column;
+        }
+        .ERproj h1, .ERproj p{
+            color: white;
+            padding-left: 5vw;
+            padding-top: 5vh;
+            
+        }
+        .LCproj{
+            color: white;
+            z-index: 4;
+            background-image: url('assets/cpp.png');
+            background-size: 100%;
+            flex-direction: column;
+            /* background-size: cover; */
+        }
+        .LCproj h1, .LCproj p{
+            color: white;
+            padding-left: 5vw;
+            padding-top: 5vh;
+            
+        }
+
         </style>
 <script type="importmap">
     {
@@ -26,14 +104,34 @@
         <div class="project_container">
             <div class="ELproj" id="proj"> 
                 <h1>LOVE BOT</h1>
-                Love Bot (tentative) is a neural-network powered robot that learns the user’s facial preferences and using real time camera input, detects faces that the user may like. 
-The user trains the robot on a dataset of images of faces, varying in age, gender and race (scraped from thispersondoesnotexist.com), selecting yes or no. The outputted organized dataset is then used to train Love Bot’s neural network, built upon several other pre-trained models for feature extraction, image recognition, etc. The fine-tuned model, running inside the doll’s shell will then be connected to a small camera in the doll’s eye. Using pre-trained facial recognition models, the network will then evaluate if a detected face matches the user’s preferences. If yes the robot will indicate, likely with an LED light. Bot will be building upon Open CV and potentially Google ML KIT feature extraction coordinates. The robot is a study of biases in the training of AI, dating app algorithms, an experiment in combining the vanity culture of dating apps and real world interaction. 
+                <p>
+                    Love Bot (tentative) is a neural-network powered robot that learns the user’s facial preferences and using real time camera input, detects faces that the user may like. 
+The user trains the robot on a dataset of images of faces, varying in age, gender 
+and race (scraped from thispersondoesnotexist.com), selecting yes or no. 
+The outputted organized dataset is then used to train Love Bot’s neural network, 
+built upon several other pre-trained models for feature extraction, image recognition, etc. 
+The fine-tuned model, running inside the doll’s shell will then be connected to a small 
+camera in the doll’s eye. Using pre-trained facial recognition models, the network will
+ then evaluate if a detected face matches the user’s preferences. If yes the robot will 
+ indicate, likely with an LED light. Bot will be building upon Open CV and potentially Google ML KIT feature extraction coordinates. The robot is a study of biases in the training of AI, dating app algorithms, an experiment in combining the vanity culture of dating apps and real world interaction. </p>
             </div>
             <div class="ERproj" id="proj">
                 <h1>TUNER</h1>
+                <p>A comprehensive song rating platform.
+                    Create and reuse a password-protected account and rate your favorite songs, keep track in your personal library.
+                    See reviews from others, and push your favorite songs to the top of the leaderboard.
+                    Full stack development and design by Benji Li, Joey Marmo, Emily Ye and Julia Yoo. HTML/CSS, PHP, Javascript, SQL
+                    </p>
             </div>
-            <div class ="LCproj" id="proj"> 
+            <div class ="LCproj" id="proj" > 
+
                 <h1>GERP</h1>
+                <p>A simplified CLI implementation of Unix’s grep.
+                    Search directories for words or phrases, case sensitive, or not.
+                    Multi-class, hash implementation. Memory capacity for hundreds of thousands of lines.
+                    No leakage, memory fully recycled upon quit.
+                    Developed by Julia Yoo and Nehir Ozden in C++</p>
+
             </div>
             <div class="RCproj" id="proj">
                 <h1></h1>
@@ -66,7 +164,7 @@ The user trains the robot on a dataset of images of faces, varying in age, gende
             <div class="grid_item g7">
                 <img class="mouth" src="assets/mouth.png">
             </div>
-            <div class="grid_item g8"></div>
+            <!-- <div class="grid_item g8"></div> -->
             <!-- <div class="grid_item g9"> -->
                 <!-- <img class="chin" src="assets/chin.png"></div> -->
             <!-- <div class="grid_item g10">10</div>
@@ -105,7 +203,7 @@ The user trains the robot on a dataset of images of faces, varying in age, gende
 
     LC.addEventListener("click", function(){
        
-            LC.style.transform = "scale(200%) rotateY(180deg)";
+            LC.style.transform = "scale(150%) rotateY(180deg) translateX(5vw)";
             project_container.style.display = "block";
             LCproj.style.display = "flex";
 
@@ -120,13 +218,13 @@ The user trains the robot on a dataset of images of faces, varying in age, gende
     })
     eye_right.addEventListener("click", function(){
        
-       eye_right.style.transform = "scale(200%) rotateY(180deg) translateY(15vh)";
+       eye_right.style.transform = "scale(150%) rotateY(180deg) translateY(-10vh) translateX(-10vh)";
        project_container.style.display = "block";
        ERproj.style.display = "flex";
     })
     eye_left.addEventListener("click", function(){
 
-       eye_left.style.transform = "scale(170%) rotateY(180deg) translateY(8vh)";
+       eye_left.style.transform = "scale(170%) rotateY(180deg) translateY(-8vh)  translateX(8vh)";
        project_container.style.display = "block";
        ELproj.style.display = "flex";
     })

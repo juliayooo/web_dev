@@ -6,9 +6,11 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&family=Rubik+Iso&family=Rubik+Vinyl&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
 
         body{
-            height: 500vh;
+            height: 300vh;
+            text-align: center
         }
         .blush{
             left: 0;
@@ -16,18 +18,28 @@
             width: 150px;
             position: fixed;
         }
-        p{
-            font-family: Rubik Vinyl, system-ui;
-            top: 100vh;
-            position: absolute;
+        h1{
+            font-family: "Rubik Vinyl", system-ui;
+            position: relative;
             font-size: 30px;
+        }
+        p{
+            width: 40vw;
+            position: relative;
+            font-family: "Syne Mono", serif;
+            font-size: 25px;
+        }
+        .aboutcontainer{
+            position: absolute;
+            top: 90vh;
         }
     </style>
     <title>about/contact</title>
-    
-    <script>
-    import { gsap } from "gsap";
-    import { ScrollTrigger } from "gsap/ScrollTrigger";
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>    <script>
+    // import { gsap } from "gsap";
+    // import { ScrollTrigger } from "gsap/ScrollTrigger";
     gsap.registerPlugin(ScrollTrigger);
 
 
@@ -59,17 +71,34 @@ gsap.registerPlugin(ScrollTrigger);
 </head>
 <body>
     
-
+    <img src="assets/blush.png" class="blush" id="blush">
     <div class="aboutcontainer">
-        <img src="assets/blush.png" class="blush" id="blush">
-
-        <p class="info">
-            Julia blah blah <br> 
-            more <br> 
-            more <br>
-            more
+        
+        <p>
+        <h1 class="info">
+            julia yoo <br> 
+        </h1>
+        <p>
+            I am an interdisciplinary artist from Toronto, Canada based 
+            the Creative Computing Institute at the University of Arts London. 
+            I am proficient in <br> 
+            C++<br> 
+            Javascript<br> 
+            HTML/CSS<br> 
+            Python <br> 
+            PHP<br> 
+            and have been working with <br> 
+            API integration <br> 
+            Machine Learning (Pytorch, Keras)<br> 
+            and learning about physical computing and Arduino.<br>
+            My interests involve full stack development, creative engineering projects, 
+            and web design and development. <br>
+            I am comfortable with <br>
+            Git/Github<br>
+            Adobe Creative Suite<br>
+            Figma<br>
+            and JetPack 6.0. <br>
         </p>
-
     </div>
 
     <nav>

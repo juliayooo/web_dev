@@ -33,6 +33,14 @@
             top: 0;
             text-align: center;
         }
+        .load{
+            position: absolute;
+            justify-content: center;
+            /* text-align: center; */
+            font-size: 30px;
+            font-family: "Syne Mono", serif;
+            margin-top: 20vh;
+        }
     </style>
     
 </head>
@@ -49,7 +57,7 @@
         <br><br><br>
         
         <div class="assets_container">
-
+            <h1 class="load">loading...</h1>
         </div>
         <nav>
             <a href="index.html">home </a>&emsp;
@@ -86,7 +94,7 @@ async function loadImages() {
         const urls = await Promise.all(
             list.items.map(item => getDownloadURL(item))
         );
-
+        assetsContainer.innerHTML = "";
         // Display the images
         urls.forEach(url => displayImage(url));
     } catch (error) {

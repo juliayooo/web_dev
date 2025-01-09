@@ -88,8 +88,8 @@ const firebaseConfig = {
         let sticker = document.createElement("img");
         sticker.src = currSticker.src;
         const rect = mycanvas.getBoundingClientRect();
-        const x = e.clientX + window.scrollX;
-        const y = e.clientY + window.scrollY; ;
+        const x = e.clientX - 15 + window.scrollX;
+        const y = e.clientY - 15 + window.scrollY; ;
         // account for scroll offset, specifically on mobile screen 
         sticker.style.position = "absolute";
         sticker.style.top = y + "px";

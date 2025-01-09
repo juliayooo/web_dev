@@ -12,7 +12,7 @@ async function getData() {
         console.log(data);
         // add each route to map from home folder 
         const page = document.getElementById("textcontainer");
-        page.innerHTML = "";
+        page.innerHTML = "<br>";
         data.forEach((line) => {
             
             if(line.text !== "" && line.text !== "/"){

@@ -9,7 +9,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
 
         body{
-            height: 300vh;
+            height: 250vh;
             text-align: center
         }
         .blush{
@@ -31,7 +31,11 @@
         }
         .aboutcontainer{
             position: absolute;
-            top: 90vh;
+            top: 100vh;
+        }
+        .scrolltitle{
+            position: absolute;
+            top: 1vh;
         }
     </style>
     <title>about/contact</title>
@@ -66,12 +70,14 @@ gsap.registerPlugin(ScrollTrigger);
         });
 
         });
+        
     </script>
 
 </head>
 <body>
     
     <img src="assets/blush.png" class="blush" id="blush">
+    <h1 class="scrolltitle">scroll ...  &#128527;</h1>
     <div class="aboutcontainer">
         
         <p>
@@ -79,7 +85,8 @@ gsap.registerPlugin(ScrollTrigger);
             julia yoo <br> 
         </h1>
         <p>
-            I am an interdisciplinary artist from Toronto, Canada based 
+            I am an interdisciplinary artist from Toronto, Canada based in Boston and London.
+            I currently study arts and computer science at Tufts University and 
             the Creative Computing Institute at the University of Arts London. 
             I am proficient in <br> 
             C++<br> 

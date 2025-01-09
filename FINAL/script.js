@@ -14,7 +14,7 @@ const camera = new THREE.PerspectiveCamera( 75, window.innerWidth/ window.innerH
 // intialize a renderer and make the background clear 
 const renderer = new THREE.WebGLRenderer( { alpha: true } ); // init like this
 renderer.setClearColor( 0xffffff, 0 ); // second param is opacity, 0 => transparent
-renderer.setSize( window.innerWidth * 0.5, window.innerHeight * 0.5, false);
+renderer.setSize( window.innerWidth * 0.4, window.innerHeight * 0.5, false);
 
 nose.appendChild( renderer.domElement );
 
@@ -24,7 +24,15 @@ const rccamera = new THREE.PerspectiveCamera( 75, window.innerWidth/ window.inne
 // intialize a renderer and make the background clear 
 const rcrenderer = new THREE.WebGLRenderer( { alpha: true } ); // init like this
 rcrenderer.setClearColor( 0xffffff, 0 ); // second param is opacity, 0 => transparent
-rcrenderer.setSize( window.innerWidth * 0.5, window.innerHeight * 0.7, false);
+
+if(window.innerWidth < 800){
+    rcrenderer.setSize( window.innerWidth * 0.3, window.innerHeight * 0.5, false);
+
+}
+else{
+    rcrenderer.setSize( window.innerWidth * 0.5, window.innerHeight * 0.7, false);
+
+}
 
 rcbox.appendChild( rcrenderer.domElement );
 
@@ -99,10 +107,18 @@ loader2.load( 'assets/revisedrc.glb', function ( gltf ) {
     console.log("loaded");
         
     rc = gltf.scene;
-    
-    // Scale 
-    rc.scale.set(15, 15, 15);  
-    rc.position.set(-0.4, 0.1, 2.9);
+
+    if(window.innerWidth < 1200){
+        rc.scale.set(10, 10, 10); 
+        rc.position.set(-0.4, 0.6, 2.9);
+        console.log("mobile");
+    }
+    else{
+        // Scale 
+        rc.scale.set(15, 15, 15); 
+        rc.position.set(-0.4, 0.2, 2.9);
+ 
+    }
     rc.rotation.y= -45;
     rc.rotation.x= 0.2;
     rc.rotation.z= 0.3;

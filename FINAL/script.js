@@ -24,7 +24,7 @@ const rccamera = new THREE.PerspectiveCamera( 75, window.innerWidth/ window.inne
 // intialize a renderer and make the background clear 
 const rcrenderer = new THREE.WebGLRenderer( { alpha: true } ); // init like this
 rcrenderer.setClearColor( 0xffffff, 0 ); // second param is opacity, 0 => transparent
-rcrenderer.setSize( window.innerWidth * 0.4, window.innerHeight * 0.6, false);
+rcrenderer.setSize( window.innerWidth * 0.5, window.innerHeight * 0.7, false);
 
 rcbox.appendChild( rcrenderer.domElement );
 
@@ -53,8 +53,6 @@ rcscene.add(light4);
     let isHovered = false;
     let mousex = 0;
     let mousey = 0;
-    let clickx = 0;
-    let clicky = 0;
 
 
 // Allowing user to use orbit control 
@@ -104,7 +102,7 @@ loader2.load( 'assets/revisedrc.glb', function ( gltf ) {
     
     // Scale 
     rc.scale.set(15, 15, 15);  
-    rc.position.set(-0.4, 0.3, 2.9);
+    rc.position.set(-0.4, 0.1, 2.9);
     rc.rotation.y= -45;
     rc.rotation.x= 0.2;
     rc.rotation.z= 0.3;
@@ -113,7 +111,7 @@ loader2.load( 'assets/revisedrc.glb', function ( gltf ) {
 
     rcscene.add(rc);
     console.log("added");
-    
+
     
     }, undefined, function ( error ) {
     
@@ -121,88 +119,91 @@ loader2.load( 'assets/revisedrc.glb', function ( gltf ) {
     
     } );
 
-    animate();
+    // MOUSE CLICK FOR RIGHT CHEEK 
+    let rotate = false;
+         
+         document.addEventListener('click', (event) => {
 
-    function animate() {
-        requestAnimationFrame(animate);
+            const rect = rcrenderer.domElement.getBoundingClientRect(); // Get the canvas position and size
+           
+            mouse.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
+            mouse.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
+            raycaster.setFromCamera(mouse, rccamera);
+            const intersects = raycaster.intersectObject(rc, true);
+          
+            if (intersects.length > 0) {
+                rotate = true;
+                console.log('RC model clicked!');
+    
+            }
+    
+        });
     
 
-
-    // Listen for Mouse Move
+        const project_container = document.querySelector('.project_container');
+        const RCproj = document.querySelector('.RCproj');
+        
+    // MOUSE MOVE FOR NOSE 
     document.addEventListener('mousemove', (event) => {
 
       
         const rect = rcrenderer.domElement.getBoundingClientRect(); // Get the canvas position and size
-
-        // console.log("x: " , event.clientX, "y: ", event.clientY);
-        // // Convert mouse position to normalized device coordinates relative to the canvas
+        // get mouse position in regards to canvas size 
         mousex = ((event.clientX - rect.left) / rect.width );
         mousey = ((event.clientY - rect.top) / rect.height);
  
-        
-
 
     });
-    const project_container = document.querySelector('.project_container');
-    project_container.addEventListener('mouseleave', (event) => {
+     // MOUSE LEAVE FOR RC
+     project_container.addEventListener('mouseleave', (event) => {
+        rotate = false;
         project_container.style.display = "none";
+        RCproj.style.display = "none";
+        rcbox.style.transform= "translateX(0vw)";
             rc.rotation.y= -45;
-
-        
-    });
-     // Listen for Mouse Move
-     document.addEventListener('click', (event) => {
-
-      
-        const rect = rcrenderer.domElement.getBoundingClientRect(); // Get the canvas position and size
-        mouse.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
-        mouse.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
-    
-        // Update raycaster with camera and mouse position
-        raycaster.setFromCamera(mouse, rccamera);
-    
-        // Check for intersections with the rc model
-        const intersects = raycaster.intersectObject(rc, true);
-        let rotationY = THREE.MathUtils.degToRad(-1);
-        if(rc){
-            if (intersects.length > 0) {
-                // Model was clicked, apply your transformation
-                rc.rotation.y = THREE.MathUtils.lerp(rc.rotation.y, rotationY, 0.0005);
-                rotationY = 0;
-                console.log('RC model clicked!');
-                project_container.style.display = "block";
-            }
-            
-        }
-        
-        
-
-
+            rccamera.position.set( 0, 0, 5 );
+            console.log("mouseleave");
 
     });
+    
+    animate();
+
+    function animate() {
+        requestAnimationFrame(animate);
+
+
         if(model){
            
 
-                //rotation limits
-                const maxzRotation = THREE.MathUtils.degToRad(-90); 
-                const minzRotation = THREE.MathUtils.degToRad(0); 
-                const maxxRotation = THREE.MathUtils.degToRad(180); 
-                const minxRotation = THREE.MathUtils.degToRad(-630); 
-            
-            //  console.log("mousey: ", mousey);
-                // Map normalized mousey (0-1) to rotation range
-                const mappedzRotation = THREE.MathUtils.lerp(minzRotation,maxzRotation, mousey);
-                const mappedxRotation = THREE.MathUtils.lerp(minxRotation,maxxRotation, mousex);
-                // Smoothly transition to the desired rotation
-                // model.rotation.x = THREE.MathUtils.clamp(model.rotation.x, minRotation, maxRotation);
-
-                model.rotation.z = THREE.MathUtils.lerp(model.rotation.z, mappedzRotation, 0.1);
-                model.rotation.y = THREE.MathUtils.lerp(model.rotation.x, mappedxRotation, 0.1);
-
-
+            //rotation limits
+            const maxzRotation = THREE.MathUtils.degToRad(-90); 
+            const minzRotation = THREE.MathUtils.degToRad(0); 
+            const maxxRotation = THREE.MathUtils.degToRad(180); 
+            const minxRotation = THREE.MathUtils.degToRad(-630); 
         
+            // Map normalized mousey (0-1) to rotation range
+            const mappedzRotation = THREE.MathUtils.lerp(minzRotation,maxzRotation, mousey);
+            const mappedxRotation = THREE.MathUtils.lerp(minxRotation,maxxRotation, mousex);
+
+            model.rotation.z = THREE.MathUtils.lerp(model.rotation.z, mappedzRotation, 0.1);
+            model.rotation.y = THREE.MathUtils.lerp(model.rotation.x, mappedxRotation, 0.1);
+        }
     
-       
+
+   
+   
+
+    if(rc){
+        if (rotate) {
+            console.log('RC model rotating!');
+            const Yrotation = -45 + THREE.MathUtils.degToRad(25); 
+            rc.rotation.y = THREE.MathUtils.lerp(rc.rotation.y, Yrotation, 0.01);
+            rccamera.position.set( -2, 0, 5 );
+            project_container.style.display = "flex"; 
+            rcbox.style.transform= "translateX(15vw)";
+            RCproj.style.display = "flex";
+        }
+  
     }
    
 

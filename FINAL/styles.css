@@ -90,7 +90,8 @@ body {
     align-items: center;
     justify-content: center;
     justify-items: center;
-    margin-top: 18vh;
+    margin-top: 5vh;
+    transform: translateY(-5vh);
 }
 .grid_container {
     position: absolute;
@@ -140,6 +141,7 @@ body {
 .g6{
     grid-column: 3 / 4;
     grid-row: 3 / 6;
+    transition: all 1s;
     /* background-color: red; */
     /* transform: translateY(-9vh); */
 }

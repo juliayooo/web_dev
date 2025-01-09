@@ -4,7 +4,6 @@
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js";
 import { getStorage, ref, uploadString, getDownloadURL } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-storage.js";
-// import html2canvas from 'https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js';
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
@@ -105,10 +104,10 @@ const firebaseConfig = {
     saveLib.addEventListener("click", () => {
         html2canvas(mycanvas).then(canvas => {
     
-             // Convert canvas to data URL
+             // convert canvas 
         const imageData = canvas.toDataURL("image/png");
 
-        // Upload to Firebase Storage
+        // upload to firebase 
         const imageRef = ref(storage, `screenshots/screenshot-${Date.now()}.png`);
         uploadString(imageRef, imageData, 'data_url')
             .then(() => {

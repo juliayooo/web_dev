@@ -1,0 +1,39 @@
+JULIA YOO's PORTFOLIO WEBSITE 
+
+Author: Julia Yoo 
+Date: January 2025
+This is my portfolio site showcasing all my coding based work. 
+It is built with HTML/CSS, Javascript, Three.js, Firebase, GSAP and Opensheet.
+
+Domain is not yet transferred. 
+
+index.html/script.js
+
+These files build and power the home page, which features 7 visual elements, 2D and 3D
+that make up a face. Each has an on-click interaction, displaying one project each. 
+The nose follows mouse position. 
+
+about.html
+
+This file builds the about page, which includes a blurb and contact info. 
+The page uses GSAP to feature a spinning scroll triggered face.
+
+game.html/game.js
+
+These files build and power the game function, which is a simple javascript collage
+maker. User clicks stickers to pick up and place. Then the user can post to gallery,
+powered by Firebase.
+
+gallery.html
+
+This file powers the gallery tab, only accesible via game. The gallery displays all 
+the collages stored in the firebase database. 
+
+cv.html/cv.js
+
+These files build and power the cv page. The cv page is powered by Opensheet and 
+references a Google Sheet to write out CV qualifications remotely.
+
+styles.css
+
+styles contains all of the universal style rules for the site. 

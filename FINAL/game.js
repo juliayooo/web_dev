@@ -56,7 +56,7 @@ const firebaseConfig = {
     // reset button 
     reset.addEventListener("click", () => {
 
-        mycanvas.innerHTML = "<img src='" + currPaper + "' class='paper' id='paper'>";
+        mycanvas.innerHTML = "<p>click a sticker to pick it up, and click to place on paper... </p>" + "<img src='" + currPaper + "' class='paper' id='paper'>";
         paper = document.getElementById("paper");
 
     });

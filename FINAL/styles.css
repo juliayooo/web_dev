@@ -65,7 +65,8 @@ body {
     align-items: center;
     align-content: center;
     width: 100vw;
-    /* text-align: center; */
+    overflow-x: hidden; 
+
 }
 /* fonts  */
 .rubik-iso-regular {
@@ -235,6 +236,7 @@ nav a{
 }
 .mycanvas{
     display: flex;
+    flex-direction: column;
     margin-left: 10vw;
     padding-top: 8vh;
 

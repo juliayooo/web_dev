@@ -85,8 +85,8 @@
     const app = initializeApp(firebaseConfig);
     const storage = getStorage();
     const assetsContainer = document.querySelector(".assets_container");
-// Function to list all files in the 'screenshots' folder
-async function loadImages() {
+
+    async function loadImages() {
     const folderRef = ref(storage, 'screenshots/');
 
     try {
@@ -108,11 +108,10 @@ async function loadImages() {
 function displayImage(url) {
     const img = document.createElement("img");
     img.src = url;
-    // img.style.width = "100px"; // Example styling
-    assetsContainer.appendChild(img); // Add the image to the page
+    // img.style.width = "100px"; 
+    assetsContainer.appendChild(img); 
 }
 
-// Call the function to load and display images
 loadImages();
 
     </script>

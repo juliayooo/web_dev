@@ -3,7 +3,7 @@ JULIA YOO's PORTFOLIO WEBSITE
 Author: Julia Yoo 
 Date: January 2025
 This is my portfolio site showcasing all my coding based work. 
-It is built with HTML/CSS, Javascript, Three.js, Firebase, GSAP and Opensheet.
+It is built with HTML/CSS, Javascript, Three.js, Firebase, GSAP, HTML2CANVAS and Opensheet.
 
 Domain is not yet transferred. 
 
@@ -22,7 +22,7 @@ game.html/game.js
 
 These files build and power the game function, which is a simple javascript collage
 maker. User clicks stickers to pick up and place. Then the user can post to gallery,
-powered by Firebase.
+powered by Firebase and html2canvas.
 
 gallery.html
 
